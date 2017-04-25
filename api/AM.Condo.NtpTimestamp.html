@@ -1,0 +1,937 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct NtpTimestamp
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct NtpTimestamp
+   ">
+    <meta name="generator" content="docfx 2.16.4.1">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="AM_Condo_NtpTimestamp" data-uid="AM.Condo.NtpTimestamp">Struct NtpTimestamp
+              </h1>
+              <div class="markdown level0 summary"><p>Represents a date and time that is stored as using the 64-bit timestamp format as defined in IETF RFC 5905
+section 6 (<a href="https://tools.ietf.org/html/rfc5905#section-6">https://tools.ietf.org/html/rfc5905#section-6</a>).</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:AM.Condo</h6>
+              <h6><strong>Assembly</strong>:AM.Condo.IO.dll</h6>
+              <h5 id="AM_Condo_NtpTimestamp_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public struct NtpTimestamp : IComparable, IComparable&lt;NtpTimestamp&gt;, IEquatable&lt;NtpTimestamp&gt;</code></pre>
+              </div>
+              <h5 id="AM_Condo_NtpTimestamp_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>RFC 5905 indicates that the seconds portion of the 64-bit timestamp format should be represented as an unsigned
+32-bit field; however, unsigned value types are not common language specification (CLS) compliant, so a 64-bit
+signed integer is used in its place.</p>
+<p>TODO: make convertible</p>
+</div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <a id="AM_Condo_NtpTimestamp__ctor_" data-uid="AM.Condo.NtpTimestamp.#ctor*"></a>
+              <h4 id="AM_Condo_NtpTimestamp__ctor_DateTime_" data-uid="AM.Condo.NtpTimestamp.#ctor(DateTime)">NtpTimestamp(DateTime)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NtpTimestamp(DateTime date)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">DateTime</span></td>
+                    <td><span class="parametername">date</span></td>
+                    <td><p>The date and time that should be represented as an NTP timestamp.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="AM_Condo_NtpTimestamp__ctor_DateTime__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The date and time can be represented in either UTC or local time; however, the value will be stored in UTC.</p>
+</div>
+              <a id="AM_Condo_NtpTimestamp__ctor_" data-uid="AM.Condo.NtpTimestamp.#ctor*"></a>
+              <h4 id="AM_Condo_NtpTimestamp__ctor_System_Byte___" data-uid="AM.Condo.NtpTimestamp.#ctor(System.Byte[])">NtpTimestamp(Byte[])</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NtpTimestamp(byte[] timestamp)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><span class="parametername">timestamp</span></td>
+                    <td><p>A 64-bit (8 byte) NTP timestamp organized in big-endian fashion as specified in IETF RFC 5905 section 6
+(<a href="https://tools.ietf.org/html/rfc5905#section-6">https://tools.ietf.org/html/rfc5905#section-6</a>). The first two words represents an unsigned 32-bit seconds
+field. The second two words represents a 32-bit fraction field resolving 232 picoseconds. The prime epoch
+is January 1, 1900 at 00:00:00.000 UTC.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp__ctor_" data-uid="AM.Condo.NtpTimestamp.#ctor*"></a>
+              <h4 id="AM_Condo_NtpTimestamp__ctor_System_Byte___System_Int32_" data-uid="AM.Condo.NtpTimestamp.#ctor(System.Byte[],System.Int32)">NtpTimestamp(Byte[], Int32)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NtpTimestamp(byte[] timestamp, int index)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><span class="parametername">timestamp</span></td>
+                    <td><p>A byte array containing a 64-bit (8 byte) NTP timestamp organized in big-endian fashion as specified in IETF
+RFC 5905 section 6 (<a href="https://tools.ietf.org/html/rfc5905#section-6">https://tools.ietf.org/html/rfc5905#section-6</a>). The first two words represents an
+unsigned 32-bit seconds field. The second two words represents a 32-bit fraction field resolving 232
+picoseconds. The prime epoch is January 1, 1900 at 00:00:00.000 UTC.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">index</span></td>
+                    <td><p>The index within the specified <span class="paramref">timestamp</span> that contains the RFC 5095 timestamp field.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp__ctor_" data-uid="AM.Condo.NtpTimestamp.#ctor*"></a>
+              <h4 id="AM_Condo_NtpTimestamp__ctor_System_Int64_" data-uid="AM.Condo.NtpTimestamp.#ctor(System.Int64)">NtpTimestamp(Int64)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NtpTimestamp(long ticks)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><span class="parametername">ticks</span></td>
+                    <td><p>A date and time expressed in the number of 100-nanosecond intervals that have elapsed since January 1, 0001
+at 00:00:00.000 in the Gregorian calendar.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp__ctor_" data-uid="AM.Condo.NtpTimestamp.#ctor*"></a>
+              <h4 id="AM_Condo_NtpTimestamp__ctor_System_Int64_DateTimeKind_" data-uid="AM.Condo.NtpTimestamp.#ctor(System.Int64,DateTimeKind)">NtpTimestamp(Int64, DateTimeKind)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NtpTimestamp(long ticks, DateTimeKind kind)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><span class="parametername">ticks</span></td>
+                    <td><p>A date and time expressed in the number of 100-nanosecond intervals that have elapsed since January 1, 0001
+at 00:00:00.000 in the Gregorian calendar.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">DateTimeKind</span></td>
+                    <td><span class="parametername">kind</span></td>
+                    <td><p>One of the enumeration values that indicates whether ticks specifies a local time, Coordinated Universal
+Time (UTC), or neither.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp__ctor_" data-uid="AM.Condo.NtpTimestamp.#ctor*"></a>
+              <h4 id="AM_Condo_NtpTimestamp__ctor_System_Int64_System_Int64_" data-uid="AM.Condo.NtpTimestamp.#ctor(System.Int64,System.Int64)">NtpTimestamp(Int64, Int64)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public NtpTimestamp(long seconds, long fraction)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><span class="parametername">seconds</span></td>
+                    <td><p>The number of seconds that have elapsed since the epoch of January 1, 1900 at 00:00:00.000 UTC.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><span class="parametername">fraction</span></td>
+                    <td><p>The time that has elapsed represented as a fraction of a second since the last second included by
+<span class="paramref">seconds</span>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <a id="AM_Condo_NtpTimestamp_Date_" data-uid="AM.Condo.NtpTimestamp.Date*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Date" data-uid="AM.Condo.NtpTimestamp.Date">Date</h4>
+              <div class="markdown level1 summary"><p>Gets the date and time in UTC represented by this instance of the <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DateTime Date { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">DateTime</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_Fraction_" data-uid="AM.Condo.NtpTimestamp.Fraction*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Fraction" data-uid="AM.Condo.NtpTimestamp.Fraction">Fraction</h4>
+              <div class="markdown level1 summary"><p>Gets the time that has elapsed represented as a fraction of a second since the last second included by
+<a class="xref" href="AM.Condo.NtpTimestamp.html#AM_Condo_NtpTimestamp_Seconds">Seconds</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long Fraction { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_Now_" data-uid="AM.Condo.NtpTimestamp.Now*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Now" data-uid="AM.Condo.NtpTimestamp.Now">Now</h4>
+              <div class="markdown level1 summary"><p>Gets the current date and time represented as an NTP timestamp.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static NtpTimestamp Now { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_Seconds_" data-uid="AM.Condo.NtpTimestamp.Seconds*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Seconds" data-uid="AM.Condo.NtpTimestamp.Seconds">Seconds</h4>
+              <div class="markdown level1 summary"><p>Gets the number of seconds that have elapsed since the epoch of January 1, 1900 at 00:00:00.000 UTC.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long Seconds { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_Ticks_" data-uid="AM.Condo.NtpTimestamp.Ticks*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Ticks" data-uid="AM.Condo.NtpTimestamp.Ticks">Ticks</h4>
+              <div class="markdown level1 summary"><p>Gets the date and time expressed in the number of 100-nanosecond intervals that have elapsed since
+January 1, 0001 at 00:00:00.000 in the Gregorian calendar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long Ticks { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="AM_Condo_NtpTimestamp_Ticks_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>The ticks are equivelant to those used by the <see cref="!:DateTime.Ticks"></see> property with a
+<see cref="!:DateTimeKind.Utc"></see>. The ticks are not calculated using the NTP epoch.</p>
+</div>
+              <a id="AM_Condo_NtpTimestamp_Timestamp_" data-uid="AM.Condo.NtpTimestamp.Timestamp*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Timestamp" data-uid="AM.Condo.NtpTimestamp.Timestamp">Timestamp</h4>
+              <div class="markdown level1 summary"><p>Gets the 64-bit (8 byte) NTP timestamp organized in big-endian fashion as specified in IETF RFC 5905 section
+6 (<a href="https://tools.ietf.org/html/rfc5905#section-6">https://tools.ietf.org/html/rfc5905#section-6</a>). The first two words represents an unsigned 32-bit seconds
+field. The second two words represents a 32-bit fraction field resolving 232 picoseconds. The prime epoch
+is January 1, 1900 at 00:00:00.000 UTC.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public byte[] Timestamp { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_UtcNow_" data-uid="AM.Condo.NtpTimestamp.UtcNow*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_UtcNow" data-uid="AM.Condo.NtpTimestamp.UtcNow">UtcNow</h4>
+              <div class="markdown level1 summary"><p>Gets the current date and time (in UTC) represented as an NTP timestamp.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static NtpTimestamp UtcNow { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <a id="AM_Condo_NtpTimestamp_CompareTo_" data-uid="AM.Condo.NtpTimestamp.CompareTo*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_CompareTo_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.CompareTo(AM.Condo.NtpTimestamp)">CompareTo(NtpTimestamp)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int CompareTo(NtpTimestamp other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">other</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_Equals_" data-uid="AM.Condo.NtpTimestamp.Equals*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Equals_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.Equals(AM.Condo.NtpTimestamp)">Equals(NtpTimestamp)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(NtpTimestamp other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">other</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_Equals_" data-uid="AM.Condo.NtpTimestamp.Equals*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_Equals_System_Object_" data-uid="AM.Condo.NtpTimestamp.Equals(System.Object)">Equals(Object)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">obj</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_GetHashCode_" data-uid="AM.Condo.NtpTimestamp.GetHashCode*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_GetHashCode" data-uid="AM.Condo.NtpTimestamp.GetHashCode">GetHashCode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="operators">Operators
+              </h3>
+              <a id="AM_Condo_NtpTimestamp_op_Equality_" data-uid="AM.Condo.NtpTimestamp.op_Equality*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_op_Equality_AM_Condo_NtpTimestamp_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.op_Equality(AM.Condo.NtpTimestamp,AM.Condo.NtpTimestamp)">Equality(NtpTimestamp, NtpTimestamp)</h4>
+              <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> instances are equal.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator ==(NtpTimestamp ts1, NtpTimestamp ts2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts1</span></td>
+                    <td><p>The first object to compare.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts2</span></td>
+                    <td><p>The second object to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>A value indicating whether or not the specified <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> instances are equal.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_op_GreaterThan_" data-uid="AM.Condo.NtpTimestamp.op_GreaterThan*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_op_GreaterThan_AM_Condo_NtpTimestamp_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.op_GreaterThan(AM.Condo.NtpTimestamp,AM.Condo.NtpTimestamp)">GreaterThan(NtpTimestamp, NtpTimestamp)</h4>
+              <div class="markdown level1 summary"><p>Determines whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is later than the other.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator&gt;(NtpTimestamp ts1, NtpTimestamp ts2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts1</span></td>
+                    <td><p>The first object to compare.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts2</span></td>
+                    <td><p>The second object to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>A value indicating whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is later than the other.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_op_GreaterThanOrEqual_" data-uid="AM.Condo.NtpTimestamp.op_GreaterThanOrEqual*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_op_GreaterThanOrEqual_AM_Condo_NtpTimestamp_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.op_GreaterThanOrEqual(AM.Condo.NtpTimestamp,AM.Condo.NtpTimestamp)">GreaterThanOrEqual(NtpTimestamp, NtpTimestamp)</h4>
+              <div class="markdown level1 summary"><p>Determines whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is later than or equal to the other.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator &gt;=(NtpTimestamp ts1, NtpTimestamp ts2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts1</span></td>
+                    <td><p>The first object to compare.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts2</span></td>
+                    <td><p>The second object to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>A value indicating whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is later than or equal to the other.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_op_Inequality_" data-uid="AM.Condo.NtpTimestamp.op_Inequality*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_op_Inequality_AM_Condo_NtpTimestamp_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.op_Inequality(AM.Condo.NtpTimestamp,AM.Condo.NtpTimestamp)">Inequality(NtpTimestamp, NtpTimestamp)</h4>
+              <div class="markdown level1 summary"><p>Determines if the specified <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> instances are not equal.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator !=(NtpTimestamp ts1, NtpTimestamp ts2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts1</span></td>
+                    <td><p>The first object to compare.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts2</span></td>
+                    <td><p>The second object to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>A value indicating whether or not the specified <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> instances are not equal.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_op_LessThan_" data-uid="AM.Condo.NtpTimestamp.op_LessThan*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_op_LessThan_AM_Condo_NtpTimestamp_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.op_LessThan(AM.Condo.NtpTimestamp,AM.Condo.NtpTimestamp)">LessThan(NtpTimestamp, NtpTimestamp)</h4>
+              <div class="markdown level1 summary"><p>Determines whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is earlier than the other.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator &lt;(NtpTimestamp ts1, NtpTimestamp ts2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts1</span></td>
+                    <td><p>The first object to compare.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts2</span></td>
+                    <td><p>The second object to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>A value indicating whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is earlier than the other.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_NtpTimestamp_op_LessThanOrEqual_" data-uid="AM.Condo.NtpTimestamp.op_LessThanOrEqual*"></a>
+              <h4 id="AM_Condo_NtpTimestamp_op_LessThanOrEqual_AM_Condo_NtpTimestamp_AM_Condo_NtpTimestamp_" data-uid="AM.Condo.NtpTimestamp.op_LessThanOrEqual(AM.Condo.NtpTimestamp,AM.Condo.NtpTimestamp)">LessThanOrEqual(NtpTimestamp, NtpTimestamp)</h4>
+              <div class="markdown level1 summary"><p>Determines whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is earlier than or equal to the other.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator &lt;=(NtpTimestamp ts1, NtpTimestamp ts2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts1</span></td>
+                    <td><p>The first object to compare.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+                    <td><span class="parametername">ts2</span></td>
+                    <td><p>The second object to compare.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>A value indicating whether or not one <a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a> is earlier than or equal to the other.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

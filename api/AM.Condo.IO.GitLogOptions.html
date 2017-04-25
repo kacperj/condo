@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GitLogOptions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GitLogOptions
+   ">
+    <meta name="generator" content="docfx 2.16.4.1">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="AM_Condo_IO_GitLogOptions" data-uid="AM.Condo.IO.GitLogOptions">Class GitLogOptions
+              </h1>
+              <div class="markdown level0 summary"><p>Represents git log options that uses the AngularJS conventions for commits.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">GitLogOptions</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:AM.Condo.IO</h6>
+              <h6><strong>Assembly</strong>:AM.Condo.Abstractions.dll</h6>
+              <h5 id="AM_Condo_IO_GitLogOptions_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class GitLogOptions : object</code></pre>
+              </div>
+              <h3 id="properties">Properties
+              </h3>
+              <a id="AM_Condo_IO_GitLogOptions_ActionKeywords_" data-uid="AM.Condo.IO.GitLogOptions.ActionKeywords*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_ActionKeywords" data-uid="AM.Condo.IO.GitLogOptions.ActionKeywords">ActionKeywords</h4>
+              <div class="markdown level1 summary"><p>Gets the actions used to denote why a reference within the git commit exists.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; ActionKeywords { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_FieldPattern_" data-uid="AM.Condo.IO.GitLogOptions.FieldPattern*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_FieldPattern" data-uid="AM.Condo.IO.GitLogOptions.FieldPattern">FieldPattern</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse a field within a commit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string FieldPattern { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_GroupBy_" data-uid="AM.Condo.IO.GitLogOptions.GroupBy*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_GroupBy" data-uid="AM.Condo.IO.GitLogOptions.GroupBy">GroupBy</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the header correspondence used to group commits by type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string GroupBy { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_HeaderCorrespondence_" data-uid="AM.Condo.IO.GitLogOptions.HeaderCorrespondence*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_HeaderCorrespondence" data-uid="AM.Condo.IO.GitLogOptions.HeaderCorrespondence">HeaderCorrespondence</h4>
+              <div class="markdown level1 summary"><p>Gets the correspondence that should be contained within a header.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; HeaderCorrespondence { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="AM_Condo_IO_GitLogOptions_HeaderCorrespondence_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This collection should contain the same number of elements as there are capture groups in the related
+<a class="xref" href="AM.Condo.IO.GitLogOptions.html#AM_Condo_IO_GitLogOptions_HeaderPattern">HeaderPattern</a>.</p>
+</div>
+              <a id="AM_Condo_IO_GitLogOptions_HeaderPattern_" data-uid="AM.Condo.IO.GitLogOptions.HeaderPattern*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_HeaderPattern" data-uid="AM.Condo.IO.GitLogOptions.HeaderPattern">HeaderPattern</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse the subject line of a git commit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string HeaderPattern { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_IncludeInvalidCommits_" data-uid="AM.Condo.IO.GitLogOptions.IncludeInvalidCommits*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_IncludeInvalidCommits" data-uid="AM.Condo.IO.GitLogOptions.IncludeInvalidCommits">IncludeInvalidCommits</h4>
+              <div class="markdown level1 summary"><p>Gets or sets a value indicating whether or not to include invalid commits.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IncludeInvalidCommits { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_MentionPrefixes_" data-uid="AM.Condo.IO.GitLogOptions.MentionPrefixes*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_MentionPrefixes" data-uid="AM.Condo.IO.GitLogOptions.MentionPrefixes">MentionPrefixes</h4>
+              <div class="markdown level1 summary"><p>Gets the prefixes used to denote a mention within a git commit message.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; MentionPrefixes { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_MergeCorrespondence_" data-uid="AM.Condo.IO.GitLogOptions.MergeCorrespondence*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_MergeCorrespondence" data-uid="AM.Condo.IO.GitLogOptions.MergeCorrespondence">MergeCorrespondence</h4>
+              <div class="markdown level1 summary"><p>Gets the correspondence that should be contained within a merge commit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; MergeCorrespondence { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="AM_Condo_IO_GitLogOptions_MergeCorrespondence_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This collection should contain the same number of elements as there are capture groups in the related
+<a class="xref" href="AM.Condo.IO.GitLogOptions.html#AM_Condo_IO_GitLogOptions_MergePattern">MergePattern</a>.</p>
+</div>
+              <a id="AM_Condo_IO_GitLogOptions_MergePattern_" data-uid="AM.Condo.IO.GitLogOptions.MergePattern*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_MergePattern" data-uid="AM.Condo.IO.GitLogOptions.MergePattern">MergePattern</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse a merge commit message.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string MergePattern { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_NoteKeywords_" data-uid="AM.Condo.IO.GitLogOptions.NoteKeywords*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_NoteKeywords" data-uid="AM.Condo.IO.GitLogOptions.NoteKeywords">NoteKeywords</h4>
+              <div class="markdown level1 summary"><p>Gets the keywords used to denote a note or breaking change within a commit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; NoteKeywords { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_ReferencePrefixes_" data-uid="AM.Condo.IO.GitLogOptions.ReferencePrefixes*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_ReferencePrefixes" data-uid="AM.Condo.IO.GitLogOptions.ReferencePrefixes">ReferencePrefixes</h4>
+              <div class="markdown level1 summary"><p>Gets the prefixes used to denote a reference within a git commit message.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; ReferencePrefixes { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_RevertCorrespondence_" data-uid="AM.Condo.IO.GitLogOptions.RevertCorrespondence*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_RevertCorrespondence" data-uid="AM.Condo.IO.GitLogOptions.RevertCorrespondence">RevertCorrespondence</h4>
+              <div class="markdown level1 summary"><p>Gets the correspondence that should be contained within a revert commit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;string&gt; RevertCorrespondence { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="AM_Condo_IO_GitLogOptions_RevertCorrespondence_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This collection should contain the same number of elements as there are capture groups in the related
+<a class="xref" href="AM.Condo.IO.GitLogOptions.html#AM_Condo_IO_GitLogOptions_RevertPattern">RevertPattern</a>.</p>
+</div>
+              <a id="AM_Condo_IO_GitLogOptions_RevertPattern_" data-uid="AM.Condo.IO.GitLogOptions.RevertPattern*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_RevertPattern" data-uid="AM.Condo.IO.GitLogOptions.RevertPattern">RevertPattern</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse a revert commit.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string RevertPattern { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_SortBy_" data-uid="AM.Condo.IO.GitLogOptions.SortBy*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_SortBy" data-uid="AM.Condo.IO.GitLogOptions.SortBy">SortBy</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the header correspondence used to sort commits by scope.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string SortBy { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_GitLogOptions_VersionTagPrefix_" data-uid="AM.Condo.IO.GitLogOptions.VersionTagPrefix*"></a>
+              <h4 id="AM_Condo_IO_GitLogOptions_VersionTagPrefix" data-uid="AM.Condo.IO.GitLogOptions.VersionTagPrefix">VersionTagPrefix</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the prefix used for version tags.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string VersionTagPrefix { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

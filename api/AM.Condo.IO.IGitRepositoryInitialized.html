@@ -1,0 +1,1078 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGitRepositoryInitialized
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGitRepositoryInitialized
+   ">
+    <meta name="generator" content="docfx 2.16.4.1">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="AM_Condo_IO_IGitRepositoryInitialized" data-uid="AM.Condo.IO.IGitRepositoryInitialized">Interface IGitRepositoryInitialized
+              </h1>
+              <div class="markdown level0 summary"><p>Defines the properties and methods required to implement a git repository that has already been initialized.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitRepositoryBare.html#AM_Condo_IO_IGitRepositoryBare_CurrentBranch">IGitRepositoryBare.CurrentBranch</a>
+                </div>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitRepositoryBare.html#AM_Condo_IO_IGitRepositoryBare_LatestCommit">IGitRepositoryBare.LatestCommit</a>
+                </div>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitRepositoryBare.html#AM_Condo_IO_IGitRepositoryBare_ClientVersion">IGitRepositoryBare.ClientVersion</a>
+                </div>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitRepositoryBare.html#AM_Condo_IO_IGitRepositoryBare_RepositoryPath">IGitRepositoryBare.RepositoryPath</a>
+                </div>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitRepositoryBare.html#AM_Condo_IO_IGitRepositoryBare_Execute_System_String_System_Boolean_">IGitRepositoryBare.Execute(String, Boolean)</a>
+                </div>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitFlow.html#AM_Condo_IO_IGitFlow_GitFlow_AM_Condo_IO_GitFlowOptions_">IGitFlow.GitFlow(GitFlowOptions)</a>
+                </div>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitFlow.html#AM_Condo_IO_IGitFlow_StartFlow_System_String_System_String_System_String_">IGitFlow.StartFlow(String, String, String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="AM.Condo.IO.IGitFlow.html#AM_Condo_IO_IGitFlow_FinishFlow">IGitFlow.FinishFlow()</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:AM.Condo.IO</h6>
+              <h6><strong>Assembly</strong>:AM.Condo.Abstractions.dll</h6>
+              <h5 id="AM_Condo_IO_IGitRepositoryInitialized_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IGitRepositoryInitialized : IGitRepositoryBare, IDisposable, IGitFlow</code></pre>
+              </div>
+              <h3 id="properties">Properties
+              </h3>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Email_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Email*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Email" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Email">Email</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the current email associated with the repository configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">string Email { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_OriginUri_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.OriginUri*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_OriginUri" data-uid="AM.Condo.IO.IGitRepositoryInitialized.OriginUri">OriginUri</h4>
+              <div class="markdown level1 summary"><p>Gets the URI of the origin remote.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">string OriginUri { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Tags_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Tags*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Tags" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Tags">Tags</h4>
+              <div class="markdown level1 summary"><p>Gets the list of tags associated with the repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; Tags { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Username_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Username*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Username" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Username">Username</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the current username associated with the repository configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">string Username { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Add_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Add*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Add_System_String_System_Boolean_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Add(System.String,System.Boolean)">Add(String, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Tracks changes to the files included by the specified <span class="paramref">spec</span> within the current commit
+context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Add(string spec, bool force)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">spec</span></td>
+                    <td><p>The file specification used to track changes to one or more files.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">force</span></td>
+                    <td><p>A value indicating whether or not to force the add operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_AddRemote_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.AddRemote*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_AddRemote_System_String_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.AddRemote(System.String,System.String)">AddRemote(String, String)</h4>
+              <div class="markdown level1 summary"><p>Adds a remote with the specified <span class="paramref">name</span> and <span class="paramref">uri</span> to the repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized AddRemote(string name, string uri)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The name of the remote to add.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">uri</span></td>
+                    <td><p>The URI of the remote to add.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Branch_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Branch*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Branch_System_String_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Branch(System.String,System.String)">Branch(String, String)</h4>
+              <div class="markdown level1 summary"><p>Creates a new branch with the specified <span class="paramref">name</span>
+based on the specified <span class="paramref">source</span>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Branch(string name, string source)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The name of the branch to create.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">source</span></td>
+                    <td><p>The source branch that should be used as the base for the newly created branch.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Checkout_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Checkout*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Checkout_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Checkout(System.String)">Checkout(String)</h4>
+              <div class="markdown level1 summary"><p>Checks out the branch or tag with the specified <span class="paramref">name</span>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Checkout(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The name of the branch or tag to checkout.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Clean_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Clean*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Clean" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Clean">Clean()</h4>
+              <div class="markdown level1 summary"><p>Cleans the git repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Clean()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Commit_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Commit*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Commit_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Commit(System.String)">Commit(String)</h4>
+              <div class="markdown level1 summary"><p>Creates a new commit with the specified <span class="paramref">message</span>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Commit(string message)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">message</span></td>
+                    <td><p>The message used to describe the commit.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Condo_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Condo*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Condo_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Condo(System.String)">Condo(String)</h4>
+              <div class="markdown level1 summary"><p>Initializes condo within the current repository using the specified <span class="paramref">root</span> path to locate
+the source for condo and configuring the build system.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Condo(string root)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">root</span></td>
+                    <td><p>The root path containing the source code for condo.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Log_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Log*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Log_System_String_System_String_AM_Condo_IO_GitLogOptions_AM_Condo_IO_IGitLogParser_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Log(System.String,System.String,AM.Condo.IO.GitLogOptions,AM.Condo.IO.IGitLogParser)">Log(String, String, GitLogOptions, IGitLogParser)</h4>
+              <div class="markdown level1 summary"><p>Gets the git log using the specified <span class="paramref">options</span></p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">GitLog Log(string from, string to, GitLogOptions options, IGitLogParser parser)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">from</span></td>
+                    <td><p>The item specification from which the git log should start.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">to</span></td>
+                    <td><p>The item specification to which the git log should end.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.GitLogOptions.html">GitLogOptions</a></td>
+                    <td><span class="parametername">options</span></td>
+                    <td><p>The options used to parse the git log.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitLogParser.html">IGitLogParser</a></td>
+                    <td><span class="parametername">parser</span></td>
+                    <td><p>The parser used to get the log.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.GitLog.html">GitLog</a></td>
+                    <td><p>The git log for the specified <span class="paramref">parser</span>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Pull_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Pull*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Pull_System_Boolean_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Pull(System.Boolean)">Pull(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Pulls the current branch or all branches from the remote repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Pull(bool all)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">all</span></td>
+                    <td><p>A value indicating whether or not to pull all branches.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Push_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Push*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Push_System_String_System_Boolean_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Push(System.String,System.Boolean)">Push(String, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Pushes all staged changes to the specified <span class="paramref">remote</span> and optionally includes tags.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Push(string remote, bool tags)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">remote</span></td>
+                    <td><p>The remote to which to push the staged changes.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">tags</span></td>
+                    <td><p>A value indicating whether or not to include tags.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Remove_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Remove*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Remove_System_String_System_Boolean_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Remove(System.String,System.Boolean)">Remove(String, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Removes the items that match the specified <span class="paramref">spec</span> from the current repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Remove(string spec, bool recursive)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">spec</span></td>
+                    <td><p>The specification of the items to remove.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">recursive</span></td>
+                    <td><p>A value indicating whether or not to remove the items recursively.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_RemoveTag_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.RemoveTag*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_RemoveTag_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.RemoveTag(System.String)">RemoveTag(String)</h4>
+              <div class="markdown level1 summary"><p>Removes the specified <span class="paramref">tag</span> from both the remote and local repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized RemoveTag(string tag)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">tag</span></td>
+                    <td><p>The tag that should be removed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_RestoreSubmodules_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.RestoreSubmodules*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_RestoreSubmodules_System_Boolean_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.RestoreSubmodules(System.Boolean)">RestoreSubmodules(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Restores all available submodules within the current repository.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized RestoreSubmodules(bool recursive)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">recursive</span></td>
+                    <td><p>A value indicating whether or not to recursively restore submodules.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_RevParse_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.RevParse*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_RevParse_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.RevParse(System.String)">RevParse(String)</h4>
+              <div class="markdown level1 summary"><p>Attempts to pick out and massage the specified reference.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">string RevParse(string reference)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">reference</span></td>
+                    <td><p>The reference to pick out and massage.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>The SHA1 of the specified <span class="paramref">reference</span>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Save_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Save*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Save_System_String_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Save(System.String,System.String)">Save(String, String)</h4>
+              <div class="markdown level1 summary"><p>Saves a file at the specified <span class="paramref">relativePath</span> with the specified
+<span class="paramref">contents</span>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Save(string relativePath, string contents)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">relativePath</span></td>
+                    <td><p>The relative path of the file that should be saved.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">contents</span></td>
+                    <td><p>The contents of the file.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="AM_Condo_IO_IGitRepositoryInitialized_Save_System_String_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This will overwrite any existing file.</p>
+</div>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_SetRemoteUrl_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.SetRemoteUrl*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_SetRemoteUrl_System_String_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.SetRemoteUrl(System.String,System.String)">SetRemoteUrl(String, String)</h4>
+              <div class="markdown level1 summary"><p>Sets the URL of the remote with the specified <span class="paramref">name</span> to the specified
+<span class="paramref">uri</span>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized SetRemoteUrl(string name, string uri)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The name of the remote to set.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">uri</span></td>
+                    <td><p>The URI of the remote.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a id="AM_Condo_IO_IGitRepositoryInitialized_Tag_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Tag*"></a>
+              <h4 id="AM_Condo_IO_IGitRepositoryInitialized_Tag_System_String_System_String_" data-uid="AM.Condo.IO.IGitRepositoryInitialized.Tag(System.String,System.String)">Tag(String, String)</h4>
+              <div class="markdown level1 summary"><p>Creates a tag with the specified <span class="paramref">name</span>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IGitRepositoryInitialized Tag(string name, string message)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The name of the tag to create.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">message</span></td>
+                    <td><p>The message used to annotate the tag.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="AM.Condo.IO.IGitRepositoryInitialized.html">IGitRepositoryInitialized</a></td>
+                    <td><p>The current repository instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Add_AM_Condo_IO_IGitRepositoryInitialized_">GitRepositoryExtensions.Add(IGitRepositoryInitialized)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Save_AM_Condo_IO_IGitRepositoryInitialized_">GitRepositoryExtensions.Save(IGitRepositoryInitialized)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Save_AM_Condo_IO_IGitRepositoryInitialized_System_String_">GitRepositoryExtensions.Save(IGitRepositoryInitialized, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Commit_AM_Condo_IO_IGitRepositoryInitialized_System_String_">GitRepositoryExtensions.Commit(IGitRepositoryInitialized, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Commit_AM_Condo_IO_IGitRepositoryInitialized_System_String_System_String_">GitRepositoryExtensions.Commit(IGitRepositoryInitialized, String, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Commit_AM_Condo_IO_IGitRepositoryInitialized_System_String_System_String_System_String_">GitRepositoryExtensions.Commit(IGitRepositoryInitialized, String, String, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Commit_AM_Condo_IO_IGitRepositoryInitialized_System_String_System_String_System_String_System_String_">GitRepositoryExtensions.Commit(IGitRepositoryInitialized, String, String, String, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Commit_AM_Condo_IO_IGitRepositoryInitialized_System_String_System_String_System_String_System_String_System_String_">GitRepositoryExtensions.Commit(IGitRepositoryInitialized, String, String, String, String, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_RestoreSubmodules_AM_Condo_IO_IGitRepositoryInitialized_">GitRepositoryExtensions.RestoreSubmodules(IGitRepositoryInitialized)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Branch_AM_Condo_IO_IGitRepositoryInitialized_System_String_">GitRepositoryExtensions.Branch(IGitRepositoryInitialized, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Log_AM_Condo_IO_IGitRepositoryInitialized_AM_Condo_IO_GitLogOptions_">GitRepositoryExtensions.Log(IGitRepositoryInitialized, GitLogOptions)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Log_AM_Condo_IO_IGitRepositoryInitialized_System_String_AM_Condo_IO_GitLogOptions_">GitRepositoryExtensions.Log(IGitRepositoryInitialized, String, GitLogOptions)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Log_AM_Condo_IO_IGitRepositoryInitialized_">GitRepositoryExtensions.Log(IGitRepositoryInitialized)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Push_AM_Condo_IO_IGitRepositoryInitialized_">GitRepositoryExtensions.Push(IGitRepositoryInitialized)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Push_AM_Condo_IO_IGitRepositoryInitialized_System_Boolean_">GitRepositoryExtensions.Push(IGitRepositoryInitialized, Boolean)</a>
+              </div>
+              <div>
+                  <a class="xref" href="AM.Condo.IO.GitRepositoryExtensions.html#AM_Condo_IO_GitRepositoryExtensions_Pull_AM_Condo_IO_IGitRepositoryInitialized_">GitRepositoryExtensions.Pull(IGitRepositoryInitialized)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
