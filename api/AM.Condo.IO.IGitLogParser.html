@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PLACEHOLDER </title>
+    <title>Interface IGitLogParser
+   </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PLACEHOLDER ">
+    <meta name="title" content="Interface IGitLogParser
+   ">
     <meta name="generator" content="docfx 2.18.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -65,10 +67,71 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="placeholder">PLACEHOLDER</h1>
-
-<p>TODO: Add .NET projects to the <em>src</em> folder and run <code>docfx</code> to generate <strong>REAL</strong> <em>API Documentation</em>!</p>
+            <article class="content wrap" id="_content" data-uid="AM.Condo.IO.IGitLogParser">
+  
+  
+  <h1 id="AM_Condo_IO_IGitLogParser" data-uid="AM.Condo.IO.IGitLogParser">Interface IGitLogParser
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the properties and methods required to implement a git log parser.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AM.Condo.IO.html">AM.Condo.IO</a></h6>
+  <h6><strong>Assembly</strong>: AM.Condo.Abstractions.dll</h6>
+  <h5 id="AM_Condo_IO_IGitLogParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGitLogParser</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AM_Condo_IO_IGitLogParser_Parse_" data-uid="AM.Condo.IO.IGitLogParser.Parse*"></a>
+  <h4 id="AM_Condo_IO_IGitLogParser_Parse_System_Collections_Generic_IEnumerable_System_Collections_Generic_IList_System_String___AM_Condo_IO_GitLogOptions_" data-uid="AM.Condo.IO.IGitLogParser.Parse(System.Collections.Generic.IEnumerable{System.Collections.Generic.IList{System.String}},AM.Condo.IO.GitLogOptions)">Parse(IEnumerable&lt;IList&lt;String&gt;&gt;, GitLogOptions)</h4>
+  <div class="markdown level1 summary"><p>Parses the specified lines using the specified <span class="paramref">options</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GitLog Parse(IEnumerable&lt;IList&lt;string&gt;&gt; commits, GitLogOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">commits</span></td>
+        <td><p>The raw commit lines emitted from a git log operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AM.Condo.IO.GitLogOptions.html">GitLogOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options used to parse the log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.IO.GitLog.html">GitLog</a></td>
+        <td><p>The parsed git log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
