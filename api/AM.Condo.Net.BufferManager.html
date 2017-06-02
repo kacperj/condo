@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BufferManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BufferManager
+   ">
+    <meta name="generator" content="docfx 2.18.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AM.Condo.Net.BufferManager">
+  
+  
+  <h1 id="AM_Condo_Net_BufferManager" data-uid="AM.Condo.Net.BufferManager">Class BufferManager
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a manager for allocating a single buffer for use with multiple operations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BufferManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AM.Condo.Net.html">AM.Condo.Net</a></h6>
+  <h6><strong>Assembly</strong>: AM.Condo.IO.dll</h6>
+  <h5 id="AM_Condo_Net_BufferManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BufferManager : IBufferManager, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="AM_Condo_Net_BufferManager__ctor_" data-uid="AM.Condo.Net.BufferManager.#ctor*"></a>
+  <h4 id="AM_Condo_Net_BufferManager__ctor" data-uid="AM.Condo.Net.BufferManager.#ctor">BufferManager()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.Net.BufferManager.html">BufferManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BufferManager()</code></pre>
+  </div>
+  <a id="AM_Condo_Net_BufferManager__ctor_" data-uid="AM.Condo.Net.BufferManager.#ctor*"></a>
+  <h4 id="AM_Condo_Net_BufferManager__ctor_System_Int32_System_Int32_System_Int32_" data-uid="AM.Condo.Net.BufferManager.#ctor(System.Int32,System.Int32,System.Int32)">BufferManager(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.Net.BufferManager.html">BufferManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BufferManager(int size, int connections, int operations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of a buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">connections</span></td>
+        <td><p>The number of connections contained within the pool.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The number of operations to allocate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="AM_Condo_Net_BufferManager_Connections_" data-uid="AM.Condo.Net.BufferManager.Connections*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_Connections" data-uid="AM.Condo.Net.BufferManager.Connections">Connections</h4>
+  <div class="markdown level1 summary"><p>Gets the maximum number of connections to pre-allocate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Connections { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.Net.IBufferManager.html#AM_Condo_Net_IBufferManager_Connections">IBufferManager.Connections</a></div>
+  <a id="AM_Condo_Net_BufferManager_Operations_" data-uid="AM.Condo.Net.BufferManager.Operations*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_Operations" data-uid="AM.Condo.Net.BufferManager.Operations">Operations</h4>
+  <div class="markdown level1 summary"><p>Gets the number of operations to pre-allocate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Operations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.Net.IBufferManager.html#AM_Condo_Net_IBufferManager_Operations">IBufferManager.Operations</a></div>
+  <a id="AM_Condo_Net_BufferManager_Size_" data-uid="AM.Condo.Net.BufferManager.Size*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_Size" data-uid="AM.Condo.Net.BufferManager.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Gets the size of a buffer for an individual connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.Net.IBufferManager.html#AM_Condo_Net_IBufferManager_Size">IBufferManager.Size</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AM_Condo_Net_BufferManager_Dispose_" data-uid="AM.Condo.Net.BufferManager.Dispose*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_Dispose" data-uid="AM.Condo.Net.BufferManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><span class="xref">System.IDisposable.Dispose()</span></div>
+  <a id="AM_Condo_Net_BufferManager_Dispose_" data-uid="AM.Condo.Net.BufferManager.Dispose*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_Dispose_System_Boolean_" data-uid="AM.Condo.Net.BufferManager.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>A value indicating whether or not dispose was called manually.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Net_BufferManager_FreeBuffer_" data-uid="AM.Condo.Net.BufferManager.FreeBuffer*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_FreeBuffer_System_Net_Sockets_SocketAsyncEventArgs_" data-uid="AM.Condo.Net.BufferManager.FreeBuffer(System.Net.Sockets.SocketAsyncEventArgs)">FreeBuffer(SocketAsyncEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Clears the buffer on the specified <span class="paramref">args</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeBuffer(SocketAsyncEventArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Sockets.SocketAsyncEventArgs</span></td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments for an asynchronous socket event whose buffer should be cleared.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.Net.IBufferManager.html#AM_Condo_Net_IBufferManager_FreeBuffer_System_Net_Sockets_SocketAsyncEventArgs_">IBufferManager.FreeBuffer(SocketAsyncEventArgs)</a></div>
+  <a id="AM_Condo_Net_BufferManager_Pop_" data-uid="AM.Condo.Net.BufferManager.Pop*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_Pop" data-uid="AM.Condo.Net.BufferManager.Pop">Pop()</h4>
+  <div class="markdown level1 summary"><p>Pop an offset from the buffer manager, which can be used to read and write to and from the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Pop()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>An offset that can be used to read and write from the buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.Net.IBufferManager.html#AM_Condo_Net_IBufferManager_Pop">IBufferManager.Pop()</a></div>
+  <a id="AM_Condo_Net_BufferManager_Push_" data-uid="AM.Condo.Net.BufferManager.Push*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_Push_System_Int32_" data-uid="AM.Condo.Net.BufferManager.Push(System.Int32)">Push(Int32)</h4>
+  <div class="markdown level1 summary"><p>Push the specified <span class="paramref">offset</span> back into the buffer manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Push(int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The offset that should be pushed back into the buffer manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.Net.IBufferManager.html#AM_Condo_Net_IBufferManager_Push_System_Int32_">IBufferManager.Push(Int32)</a></div>
+  <a id="AM_Condo_Net_BufferManager_SetBuffer_" data-uid="AM.Condo.Net.BufferManager.SetBuffer*"></a>
+  <h4 id="AM_Condo_Net_BufferManager_SetBuffer_System_Net_Sockets_SocketAsyncEventArgs_" data-uid="AM.Condo.Net.BufferManager.SetBuffer(System.Net.Sockets.SocketAsyncEventArgs)">SetBuffer(SocketAsyncEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Sets the buffer on the specified <span class="paramref">args</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuffer(SocketAsyncEventArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Sockets.SocketAsyncEventArgs</span></td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments for an asynchronous socket event whose buffer should be set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.Net.IBufferManager.html#AM_Condo_Net_IBufferManager_SetBuffer_System_Net_Sockets_SocketAsyncEventArgs_">IBufferManager.SetBuffer(SocketAsyncEventArgs)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

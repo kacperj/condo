@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ChangeLogWriter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ChangeLogWriter
+   ">
+    <meta name="generator" content="docfx 2.18.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AM.Condo.ChangeLog.ChangeLogWriter">
+  
+  
+  <h1 id="AM_Condo_ChangeLog_ChangeLogWriter" data-uid="AM.Condo.ChangeLog.ChangeLogWriter">Class ChangeLogWriter
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a change log writer used to generate a changelog from a git commit history.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ChangeLogWriter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AM.Condo.ChangeLog.html">AM.Condo.ChangeLog</a></h6>
+  <h6><strong>Assembly</strong>: AM.Condo.ChangeLog.dll</h6>
+  <h5 id="AM_Condo_ChangeLog_ChangeLogWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChangeLogWriter : IChangeLogWriter, IChangeLogWriterApplied, IChangeLogWriterCompiled, IChangeLogWriterCanCompile, IChangeLogWriterCanInitialize</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter__ctor_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.#ctor*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter__ctor" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.#ctor">ChangeLogWriter()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.ChangeLog.ChangeLogWriter.html">ChangeLogWriter</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChangeLogWriter()</code></pre>
+  </div>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter__ctor_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.#ctor*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter__ctor_AM_Condo_ChangeLog_ChangeLogOptions_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.#ctor(AM.Condo.ChangeLog.ChangeLogOptions)">ChangeLogWriter(ChangeLogOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="AM.Condo.ChangeLog.ChangeLogWriter.html">ChangeLogWriter</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChangeLogWriter(ChangeLogOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.ChangeLog.ChangeLogOptions.html">ChangeLogOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options used to configure the change log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_Initialize_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.Initialize*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_Initialize_System_String_System_String_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.Initialize(System.String,System.String)">Initialize(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes the change log at the specified <span class="paramref">path</span>
+using the specified initial <span class="paramref">content</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IChangeLogWriterCanCompile Initialize(string path, string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path in which to initialize the change log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The text used to initialize the change log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanCompile.html">IChangeLogWriterCanCompile</a></td>
+        <td><p>The current change log writer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanInitialize.html#AM_Condo_ChangeLog_IChangeLogWriterCanInitialize_Initialize_System_String_System_String_">IChangeLogWriterCanInitialize.Initialize(String, String)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is invalid, or has invalid permissions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterApplied_ChangeLog_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterApplied#ChangeLog*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterApplied_ChangeLog" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterApplied#ChangeLog">IChangeLogWriterApplied.ChangeLog</h4>
+  <div class="markdown level1 summary"><p>Gets the result containing the change log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string IChangeLogWriterApplied.ChangeLog { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterApplied.html#AM_Condo_ChangeLog_IChangeLogWriterApplied_ChangeLog">IChangeLogWriterApplied.ChangeLog</a></div>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterApplied_Save_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterApplied#Save*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterApplied_Save" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterApplied#Save">IChangeLogWriterApplied.Save()</h4>
+  <div class="markdown level1 summary"><p>Saves the applied change log template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IChangeLogWriterApplied.Save()</code></pre>
+  </div>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterApplied.html#AM_Condo_ChangeLog_IChangeLogWriterApplied_Save">IChangeLogWriterApplied.Save()</a></div>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Load_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#Load*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Load_System_String_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#Load(System.String)">IChangeLogWriterCanCompile.Load(String)</h4>
+  <div class="markdown level1 summary"><p>Loads and compiles a template from the specified <span class="paramref">path</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IChangeLogWriterCompiled IChangeLogWriterCanCompile.Load(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path containing a handlebars template used to generate the change log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCompiled.html">IChangeLogWriterCompiled</a></td>
+        <td><p>The current change log writer after loading and compiling the template from the specified
+<span class="paramref">path</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanCompile.html#AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Load_System_String_">IChangeLogWriterCanCompile.Load(String)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is invalid, or has invalid permissions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_LoadPartial_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#LoadPartial*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_LoadPartial_System_String_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#LoadPartial(System.String)">IChangeLogWriterCanCompile.LoadPartial(String)</h4>
+  <div class="markdown level1 summary"><p>Loads and compiles a partial tempalte from the specified <span class="paramref">path</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IChangeLogWriterCanCompile IChangeLogWriterCanCompile.LoadPartial(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path containing a handlebars partial template used to generate the change log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanCompile.html">IChangeLogWriterCanCompile</a></td>
+        <td><p>The current change log writer after loading and compiling the partial template from the specified
+<span class="paramref">path</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanCompile.html#AM_Condo_ChangeLog_IChangeLogWriterCanCompile_LoadPartial_System_String_">IChangeLogWriterCanCompile.LoadPartial(String)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">path</span> is invalid, or has invalid permissions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Partial_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#Partial*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Partial_System_String_System_String_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#Partial(System.String,System.String)">IChangeLogWriterCanCompile.Partial(String, String)</h4>
+  <div class="markdown level1 summary"><p>Compiles the specified <span class="paramref">partial</span> template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IChangeLogWriterCanCompile IChangeLogWriterCanCompile.Partial(string name, string partial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the partial template.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">partial</span></td>
+        <td><p>The handlebars partial template used to generate the change log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanCompile.html">IChangeLogWriterCanCompile</a></td>
+        <td><p>The current change log writer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanCompile.html#AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Partial_System_String_System_String_">IChangeLogWriterCanCompile.Partial(String, String)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">partial</span> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">partial</span> is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Template_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#Template*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Template_System_String_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCanCompile#Template(System.String)">IChangeLogWriterCanCompile.Template(String)</h4>
+  <div class="markdown level1 summary"><p>Compiles the specified <span class="paramref">template</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IChangeLogWriterCompiled IChangeLogWriterCanCompile.Template(string template)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">template</span></td>
+        <td><p>The handlebars template used to generate the change log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCompiled.html">IChangeLogWriterCompiled</a></td>
+        <td><p>The current change log writer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCanCompile.html#AM_Condo_ChangeLog_IChangeLogWriterCanCompile_Template_System_String_">IChangeLogWriterCanCompile.Template(String)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">template</span> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">template</span> is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCompiled_Apply_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCompiled#Apply*"></a>
+  <h4 id="AM_Condo_ChangeLog_ChangeLogWriter_AM_Condo_ChangeLog_IChangeLogWriterCompiled_Apply_AM_Condo_IO_GitLog_" data-uid="AM.Condo.ChangeLog.ChangeLogWriter.AM#Condo#ChangeLog#IChangeLogWriterCompiled#Apply(AM.Condo.IO.GitLog)">IChangeLogWriterCompiled.Apply(GitLog)</h4>
+  <div class="markdown level1 summary"><p>Applies the template to the specified <span class="paramref">log</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IChangeLogWriterApplied IChangeLogWriterCompiled.Apply(GitLog log)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.IO.GitLog.html">GitLog</a></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>The git log used to apply the template.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterApplied.html">IChangeLogWriterApplied</a></td>
+        <td><p>The current change log writer instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="AM.Condo.ChangeLog.IChangeLogWriterCompiled.html#AM_Condo_ChangeLog_IChangeLogWriterCompiled_Apply_AM_Condo_IO_GitLog_">IChangeLogWriterCompiled.Apply(GitLog)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if the specified <span class="paramref">log</span> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

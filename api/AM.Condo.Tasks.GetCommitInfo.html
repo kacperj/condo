@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GetCommitInfo
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GetCommitInfo
+   ">
+    <meta name="generator" content="docfx 2.18.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AM.Condo.Tasks.GetCommitInfo">
+  
+  
+  <h1 id="AM_Condo_Tasks_GetCommitInfo" data-uid="AM.Condo.Tasks.GetCommitInfo">Class GetCommitInfo
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a Microsoft Build task that gets information about the commits within a repository.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.Build.Utilities.Task</span></div>
+    <div class="level2"><span class="xref">GetCommitInfo</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.BuildEngine</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.BuildEngine2</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.BuildEngine3</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.BuildEngine4</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.BuildEngine5</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.HostObject</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.Log</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.TaskResources</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.Build.Utilities.Task.HelpKeywordPrefix</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AM.Condo.Tasks.html">AM.Condo.Tasks</a></h6>
+  <h6><strong>Assembly</strong>: AM.Condo.dll</h6>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GetCommitInfo : Task, ITask</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="AM_Condo_Tasks_GetCommitInfo_ActionKeywords_" data-uid="AM.Condo.Tasks.GetCommitInfo.ActionKeywords*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_ActionKeywords" data-uid="AM.Condo.Tasks.GetCommitInfo.ActionKeywords">ActionKeywords</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the actions used to track references that resolve an issue (work item).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ActionKeywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_ActionKeywords_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list is semi-colon delimited.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_ClientVersion_" data-uid="AM.Condo.Tasks.GetCommitInfo.ClientVersion*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_ClientVersion" data-uid="AM.Condo.Tasks.GetCommitInfo.ClientVersion">ClientVersion</h4>
+  <div class="markdown level1 summary"><p>Gets the version of the client used to access the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Output]
+public string ClientVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Tasks_GetCommitInfo_Commits_" data-uid="AM.Condo.Tasks.GetCommitInfo.Commits*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_Commits" data-uid="AM.Condo.Tasks.GetCommitInfo.Commits">Commits</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the commits that belong to the current release.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Output]
+public ITaskItem[] Commits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Build.Framework.ITaskItem</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_Commits_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Will contain a list of all commits that comply with the indicated format.
+The SHA value will be the <span class="xref">Microsoft.Build.Framework.ITaskItem.ItemSpec</span>. In addition, the task items will contain
+metadata that describes any commit that follows the conventional-changelog style guide. This metadata
+includes (at least) the following:
+<ul><li>Hash
+    The full SHA for the commit.
+</li><li>ShortHash
+The first 7 (or more required for uniqueness) characters of the SHA for the commit.
+</li><li>Header
+The first line of the commit message.
+</li><li>Body
+The remaining lines of the commit message.
+</li><li>Raw
+The raw payload of the commit message.
+</li><li>Branches
+A semi-colon delimited list of branches associated with the commit.
+</li><li>Tags
+A semi-colon delimited list of tags associated with the commit.
+</li><li>References
+A semi-colon delimited list of work item ids associated with the commit.
+</li><li>Notes
+The total number of notes or breaking changes associated with the commit.
+</li></ul></p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_FieldPattern_" data-uid="AM.Condo.Tasks.GetCommitInfo.FieldPattern*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_FieldPattern" data-uid="AM.Condo.Tasks.GetCommitInfo.FieldPattern">FieldPattern</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse a field within a commit message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FieldPattern { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Tasks_GetCommitInfo_From_" data-uid="AM.Condo.Tasks.GetCommitInfo.From*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_From" data-uid="AM.Condo.Tasks.GetCommitInfo.From">From</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the commit from which to retrieve commit history.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Output]
+public string From { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_From_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is <span class="xref">null</span>, which will cause all commits in the entire repository to be
+included.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_GitLog_" data-uid="AM.Condo.Tasks.GetCommitInfo.GitLog*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_GitLog" data-uid="AM.Condo.Tasks.GetCommitInfo.GitLog">GitLog</h4>
+  <div class="markdown level1 summary"><p>Gets the git log if previously retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GitLog GitLog { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.IO.GitLog.html">GitLog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Tasks_GetCommitInfo_HeaderCorrespondence_" data-uid="AM.Condo.Tasks.GetCommitInfo.HeaderCorrespondence*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_HeaderCorrespondence" data-uid="AM.Condo.Tasks.GetCommitInfo.HeaderCorrespondence">HeaderCorrespondence</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the correspondence for a header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeaderCorrespondence { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_HeaderCorrespondence_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list is semi-colon delimited.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_HeaderPattern_" data-uid="AM.Condo.Tasks.GetCommitInfo.HeaderPattern*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_HeaderPattern" data-uid="AM.Condo.Tasks.GetCommitInfo.HeaderPattern">HeaderPattern</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse the header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeaderPattern { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_HeaderPattern_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The position and number of match groups within the pattern are directly related to the
+<a class="xref" href="AM.Condo.Tasks.GetCommitInfo.html#AM_Condo_Tasks_GetCommitInfo_HeaderCorrespondence">HeaderCorrespondence</a> whereby the index of the match group must match the index of the
+correspondence task item.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_IncludeInvalidCommits_" data-uid="AM.Condo.Tasks.GetCommitInfo.IncludeInvalidCommits*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_IncludeInvalidCommits" data-uid="AM.Condo.Tasks.GetCommitInfo.IncludeInvalidCommits">IncludeInvalidCommits</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether or not to include invalid commits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IncludeInvalidCommits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Tasks_GetCommitInfo_MentionPrefixes_" data-uid="AM.Condo.Tasks.GetCommitInfo.MentionPrefixes*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_MentionPrefixes" data-uid="AM.Condo.Tasks.GetCommitInfo.MentionPrefixes">MentionPrefixes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the prefixes used to reference an an individual or group within a commit message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MentionPrefixes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_MentionPrefixes_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list is semi-colon delimited.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_MergeCorrespondence_" data-uid="AM.Condo.Tasks.GetCommitInfo.MergeCorrespondence*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_MergeCorrespondence" data-uid="AM.Condo.Tasks.GetCommitInfo.MergeCorrespondence">MergeCorrespondence</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the correspondence for a merge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MergeCorrespondence { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_MergeCorrespondence_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list is semi-colon delimited.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_MergePattern_" data-uid="AM.Condo.Tasks.GetCommitInfo.MergePattern*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_MergePattern" data-uid="AM.Condo.Tasks.GetCommitInfo.MergePattern">MergePattern</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse a merge within a commit message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MergePattern { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Tasks_GetCommitInfo_NoteKeywords_" data-uid="AM.Condo.Tasks.GetCommitInfo.NoteKeywords*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_NoteKeywords" data-uid="AM.Condo.Tasks.GetCommitInfo.NoteKeywords">NoteKeywords</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the keywords used to reference a breaking change within a commit message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NoteKeywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_NoteKeywords_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list is semi-colon delimited.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_ReferencePrefixes_" data-uid="AM.Condo.Tasks.GetCommitInfo.ReferencePrefixes*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_ReferencePrefixes" data-uid="AM.Condo.Tasks.GetCommitInfo.ReferencePrefixes">ReferencePrefixes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the prefixes used to reference an issue (work item) within a commit message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReferencePrefixes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_ReferencePrefixes_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list is semi-colon delimited.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_RepositoryRoot_" data-uid="AM.Condo.Tasks.GetCommitInfo.RepositoryRoot*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_RepositoryRoot" data-uid="AM.Condo.Tasks.GetCommitInfo.RepositoryRoot">RepositoryRoot</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the root of the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Output]
+[Required]
+public string RepositoryRoot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Tasks_GetCommitInfo_RevertCorrespondence_" data-uid="AM.Condo.Tasks.GetCommitInfo.RevertCorrespondence*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_RevertCorrespondence" data-uid="AM.Condo.Tasks.GetCommitInfo.RevertCorrespondence">RevertCorrespondence</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the correspondence for a reversion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RevertCorrespondence { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_RevertCorrespondence_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list is semi-colon delimited.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_RevertPattern_" data-uid="AM.Condo.Tasks.GetCommitInfo.RevertPattern*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_RevertPattern" data-uid="AM.Condo.Tasks.GetCommitInfo.RevertPattern">RevertPattern</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the regular expression pattern used to parse a reversion within a commit message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RevertPattern { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="AM_Condo_Tasks_GetCommitInfo_To_" data-uid="AM.Condo.Tasks.GetCommitInfo.To*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_To" data-uid="AM.Condo.Tasks.GetCommitInfo.To">To</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the commit to which to retrieve commit history.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Output]
+public string To { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AM_Condo_Tasks_GetCommitInfo_To_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is HEAD, which is the most recent commit.</p>
+</div>
+  <a id="AM_Condo_Tasks_GetCommitInfo_VersionTagPrefix_" data-uid="AM.Condo.Tasks.GetCommitInfo.VersionTagPrefix*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_VersionTagPrefix" data-uid="AM.Condo.Tasks.GetCommitInfo.VersionTagPrefix">VersionTagPrefix</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the tag used to indicate a version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VersionTagPrefix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="AM_Condo_Tasks_GetCommitInfo_Execute_" data-uid="AM.Condo.Tasks.GetCommitInfo.Execute*"></a>
+  <h4 id="AM_Condo_Tasks_GetCommitInfo_Execute" data-uid="AM.Condo.Tasks.GetCommitInfo.Execute">Execute()</h4>
+  <div class="markdown level1 summary"><p>Executes the <a class="xref" href="AM.Condo.Tasks.GetRepositoryInfo.html">GetRepositoryInfo</a> task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Execute()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A value indicating whether or not the task executed successfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.Build.Utilities.Task.Execute()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

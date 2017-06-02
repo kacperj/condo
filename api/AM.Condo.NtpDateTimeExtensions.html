@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace AM.Condo.Diagnostics
+    <title>Class NtpDateTimeExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace AM.Condo.Diagnostics
+    <meta name="title" content="Class NtpDateTimeExtensions
    ">
     <meta name="generator" content="docfx 2.18.2.0">
     
@@ -67,46 +67,95 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AM.Condo.Diagnostics">
+            <article class="content wrap" id="_content" data-uid="AM.Condo.NtpDateTimeExtensions">
   
-  <h1 id="AM_Condo_Diagnostics" data-uid="AM.Condo.Diagnostics">Namespace AM.Condo.Diagnostics
+  
+  <h1 id="AM_Condo_NtpDateTimeExtensions" data-uid="AM.Condo.NtpDateTimeExtensions">Class NtpDateTimeExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a set of extension methods for the <span class="xref">System.DateTime</span> structure for
+NTP timestamp conversion.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NtpDateTimeExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AM.Condo.html">AM.Condo</a></h6>
+  <h6><strong>Assembly</strong>: AM.Condo.IO.dll</h6>
+  <h5 id="AM_Condo_NtpDateTimeExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class NtpDateTimeExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
   </h3>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.CondoMSBuildLogger.html">CondoMSBuildLogger</a></h4>
-      <section><p>Represents a logger used to log messages, warnings, errors, and exceptions through an MSBuild task.</p>
-</section>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.LoggerExtensions.html">LoggerExtensions</a></h4>
-      <section><p>Represents a set of extension methods for the <a class="xref" href="AM.Condo.Diagnostics.ILogger.html">ILogger</a> interface.</p>
-</section>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.NoOpLogger.html">NoOpLogger</a></h4>
-      <section><p>Represents a logger that does nothing.</p>
-</section>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.ProcessInvoker.html">ProcessInvoker</a></h4>
-      <section><p>Represents an invoker used to execute sub commands for a specific command.</p>
-</section>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.ProcessOutput.html">ProcessOutput</a></h4>
-      <section><p>Represents a default implementation of process output.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.ILogger.html">ILogger</a></h4>
-      <section><p>Defines the properties and methods required to implement a logger used to log messages throughout condo.</p>
-</section>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.IProcessInvoker.html">IProcessInvoker</a></h4>
-      <section><p>Defines the properties and methods required to implement an invoker for a process.</p>
-</section>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.IProcessOutput.html">IProcessOutput</a></h4>
-      <section><p>Defines the properties and methods required to implement output from a process.</p>
-</section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="AM.Condo.Diagnostics.LogLevel.html">LogLevel</a></h4>
-      <section><p>Represents an enumeration of the available log levels used to describe verbosity for logging.</p>
-</section>
+  <a id="AM_Condo_NtpDateTimeExtensions_ToNtpTimestamp_" data-uid="AM.Condo.NtpDateTimeExtensions.ToNtpTimestamp*"></a>
+  <h4 id="AM_Condo_NtpDateTimeExtensions_ToNtpTimestamp_System_DateTime_" data-uid="AM.Condo.NtpDateTimeExtensions.ToNtpTimestamp(System.DateTime)">ToNtpTimestamp(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified <span class="paramref">date</span> into an NTP timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NtpTimestamp ToNtpTimestamp(this DateTime date)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">date</span></td>
+        <td><p>The date to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AM.Condo.NtpTimestamp.html">NtpTimestamp</a></td>
+        <td><p>The NTP timestamp that represents the specified <span class="paramref">date</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

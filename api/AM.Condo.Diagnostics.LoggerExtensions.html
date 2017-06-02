@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ILogger
+    <title>Class LoggerExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ILogger
+    <meta name="title" content="Class LoggerExtensions
    ">
     <meta name="generator" content="docfx 2.18.2.0">
     
@@ -67,78 +67,59 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="AM.Condo.Diagnostics.ILogger">
+            <article class="content wrap" id="_content" data-uid="AM.Condo.Diagnostics.LoggerExtensions">
   
   
-  <h1 id="AM_Condo_Diagnostics_ILogger" data-uid="AM.Condo.Diagnostics.ILogger">Interface ILogger
+  <h1 id="AM_Condo_Diagnostics_LoggerExtensions" data-uid="AM.Condo.Diagnostics.LoggerExtensions">Class LoggerExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Defines the properties and methods required to implement a logger used to log messages throughout condo.</p>
+  <div class="markdown level0 summary"><p>Represents a set of extension methods for the <a class="xref" href="AM.Condo.Diagnostics.ILogger.html">ILogger</a> interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LoggerExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AM.Condo.Diagnostics.html">AM.Condo.Diagnostics</a></h6>
-  <h6><strong>Assembly</strong>: AM.Condo.Abstractions.dll</h6>
-  <h5 id="AM_Condo_Diagnostics_ILogger_syntax">Syntax</h5>
+  <h6><strong>Assembly</strong>: AM.Condo.IO.dll</h6>
+  <h5 id="AM_Condo_Diagnostics_LoggerExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILogger</code></pre>
+    <pre><code class="lang-csharp hljs">public static class LoggerExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="AM_Condo_Diagnostics_ILogger_LogError_" data-uid="AM.Condo.Diagnostics.ILogger.LogError*"></a>
-  <h4 id="AM_Condo_Diagnostics_ILogger_LogError_System_Exception_" data-uid="AM.Condo.Diagnostics.ILogger.LogError(System.Exception)">LogError(Exception)</h4>
-  <div class="markdown level1 summary"><p>Logs the specified <span class="paramref">exception</span>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void LogError(Exception exception)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Exception</span></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>The exception to log.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown when the specified <span class="paramref">exception</span> is <span class="xref">null</span>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Thrown when the specified <span class="paramref">exception</span> is empty.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="AM_Condo_Diagnostics_ILogger_LogError_" data-uid="AM.Condo.Diagnostics.ILogger.LogError*"></a>
-  <h4 id="AM_Condo_Diagnostics_ILogger_LogError_System_String_" data-uid="AM.Condo.Diagnostics.ILogger.LogError(System.String)">LogError(String)</h4>
+  <a id="AM_Condo_Diagnostics_LoggerExtensions_LogError_" data-uid="AM.Condo.Diagnostics.LoggerExtensions.LogError*"></a>
+  <h4 id="AM_Condo_Diagnostics_LoggerExtensions_LogError_AM_Condo_Diagnostics_ILogger_System_Collections_Generic_IEnumerable_System_String__" data-uid="AM.Condo.Diagnostics.LoggerExtensions.LogError(AM.Condo.Diagnostics.ILogger,System.Collections.Generic.IEnumerable{System.String})">LogError(ILogger, IEnumerable&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Logs the specified <span class="paramref">error</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void LogError(string error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void LogError(this ILogger logger, IEnumerable&lt;string&gt; error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,9 +132,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="AM.Condo.Diagnostics.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger to use to log the warning.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">error</span></td>
-        <td><p>The error to log.</p>
+        <td><p>The warning to log.</p>
 </td>
       </tr>
     </tbody>
@@ -172,21 +159,16 @@
         <td><p>Thrown when the specified <span class="paramref">error</span> is <span class="xref">null</span>.</p>
 </td>
       </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Thrown when the specified <span class="paramref">error</span> is empty.</p>
-</td>
-      </tr>
     </tbody>
   </table>
-  <a id="AM_Condo_Diagnostics_ILogger_LogMessage_" data-uid="AM.Condo.Diagnostics.ILogger.LogMessage*"></a>
-  <h4 id="AM_Condo_Diagnostics_ILogger_LogMessage_System_String_AM_Condo_Diagnostics_LogLevel_" data-uid="AM.Condo.Diagnostics.ILogger.LogMessage(System.String,AM.Condo.Diagnostics.LogLevel)">LogMessage(String, LogLevel)</h4>
+  <a id="AM_Condo_Diagnostics_LoggerExtensions_LogMessage_" data-uid="AM.Condo.Diagnostics.LoggerExtensions.LogMessage*"></a>
+  <h4 id="AM_Condo_Diagnostics_LoggerExtensions_LogMessage_AM_Condo_Diagnostics_ILogger_System_Collections_Generic_IEnumerable_System_String__AM_Condo_Diagnostics_LogLevel_" data-uid="AM.Condo.Diagnostics.LoggerExtensions.LogMessage(AM.Condo.Diagnostics.ILogger,System.Collections.Generic.IEnumerable{System.String},AM.Condo.Diagnostics.LogLevel)">LogMessage(ILogger, IEnumerable&lt;String&gt;, LogLevel)</h4>
   <div class="markdown level1 summary"><p>Logs the specified <span class="paramref">message</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void LogMessage(string message, LogLevel level)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void LogMessage(this ILogger logger, IEnumerable&lt;string&gt; message, LogLevel level)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,15 +181,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="AM.Condo.Diagnostics.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger to use to log the warning.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">message</span></td>
-        <td><p>The message to log.</p>
+        <td><p>The warning to log.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="AM.Condo.Diagnostics.LogLevel.html">LogLevel</a></td>
         <td><span class="parametername">level</span></td>
-        <td><p>The level of the log entry.</p>
+        <td><p>The level of the log message.</p>
 </td>
       </tr>
     </tbody>
@@ -226,21 +214,16 @@
         <td><p>Thrown when the specified <span class="paramref">message</span> is <span class="xref">null</span>.</p>
 </td>
       </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Thrown when the specified <span class="paramref">message</span> is empty.</p>
-</td>
-      </tr>
     </tbody>
   </table>
-  <a id="AM_Condo_Diagnostics_ILogger_LogWarning_" data-uid="AM.Condo.Diagnostics.ILogger.LogWarning*"></a>
-  <h4 id="AM_Condo_Diagnostics_ILogger_LogWarning_System_String_" data-uid="AM.Condo.Diagnostics.ILogger.LogWarning(System.String)">LogWarning(String)</h4>
+  <a id="AM_Condo_Diagnostics_LoggerExtensions_LogWarning_" data-uid="AM.Condo.Diagnostics.LoggerExtensions.LogWarning*"></a>
+  <h4 id="AM_Condo_Diagnostics_LoggerExtensions_LogWarning_AM_Condo_Diagnostics_ILogger_System_Collections_Generic_IEnumerable_System_String__" data-uid="AM.Condo.Diagnostics.LoggerExtensions.LogWarning(AM.Condo.Diagnostics.ILogger,System.Collections.Generic.IEnumerable{System.String})">LogWarning(ILogger, IEnumerable&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Logs the specified <span class="paramref">warning</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void LogWarning(string warning)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void LogWarning(this ILogger logger, IEnumerable&lt;string&gt; warning)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,7 +236,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="AM.Condo.Diagnostics.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger to use to log the warning.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">warning</span></td>
         <td><p>The warning to log.</p>
 </td>
@@ -274,23 +263,8 @@
         <td><p>Thrown when the specified <span class="paramref">warning</span> is <span class="xref">null</span>.</p>
 </td>
       </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>Thrown when the specified <span class="paramref">warning</span> is empty.</p>
-</td>
-      </tr>
     </tbody>
   </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="AM.Condo.Diagnostics.LoggerExtensions.html#AM_Condo_Diagnostics_LoggerExtensions_LogWarning_AM_Condo_Diagnostics_ILogger_System_Collections_Generic_IEnumerable_System_String__">LoggerExtensions.LogWarning(ILogger, IEnumerable&lt;String&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="AM.Condo.Diagnostics.LoggerExtensions.html#AM_Condo_Diagnostics_LoggerExtensions_LogError_AM_Condo_Diagnostics_ILogger_System_Collections_Generic_IEnumerable_System_String__">LoggerExtensions.LogError(ILogger, IEnumerable&lt;String&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="AM.Condo.Diagnostics.LoggerExtensions.html#AM_Condo_Diagnostics_LoggerExtensions_LogMessage_AM_Condo_Diagnostics_ILogger_System_Collections_Generic_IEnumerable_System_String__AM_Condo_Diagnostics_LogLevel_">LoggerExtensions.LogMessage(ILogger, IEnumerable&lt;String&gt;, LogLevel)</a>
-  </div>
 </article>
           </div>
           
