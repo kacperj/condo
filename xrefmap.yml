@@ -6009,6 +6009,18 @@ references:
   commentId: Overload:AM.Condo.Tasks.GetContent.Execute
   fullName: AM.Condo.Tasks.GetContent.Execute
   nameWithType: GetContent.Execute
+- uid: AM.Condo.Tasks.GetContent.Extract
+  name: Extract
+  href: api/AM.Condo.Tasks.GetContent.html#AM_Condo_Tasks_GetContent_Extract
+  commentId: P:AM.Condo.Tasks.GetContent.Extract
+  fullName: AM.Condo.Tasks.GetContent.Extract
+  nameWithType: GetContent.Extract
+- uid: AM.Condo.Tasks.GetContent.Extract*
+  name: Extract
+  href: api/AM.Condo.Tasks.GetContent.html#AM_Condo_Tasks_GetContent_Extract_
+  commentId: Overload:AM.Condo.Tasks.GetContent.Extract
+  fullName: AM.Condo.Tasks.GetContent.Extract
+  nameWithType: GetContent.Extract
 - uid: AM.Condo.Tasks.GetContent.Name
   name: Name
   href: api/AM.Condo.Tasks.GetContent.html#AM_Condo_Tasks_GetContent_Name
