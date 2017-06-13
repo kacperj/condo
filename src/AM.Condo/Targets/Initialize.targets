@@ -26,6 +26,9 @@
     <ArtifactsRoot      Condition=" '$(ArtifactsRoot)'      == '' ">$(RepositoryRoot)artifacts$(slash)</ArtifactsRoot>
     <ArtifactsRoot      Condition=" !HasTrailingSlash('$(ArtifactsRoot)') ">$(ArtifactsRoot)$(slash)</ArtifactsRoot>
 
+    <OpenApiArtifactsRoot    Condition=" '$(OpenApiArtifactsRoot)'    == '' ">$(ArtifactsRoot)services</OpenApiArtifactsRoot>
+    <OpenApiArtifactsRoot    Condition=" !HasTrailingSlash('$(OpenApiArtifactsRoot)') ">$(OpenApiArtifactsRoot)$(slash)</OpenApiArtifactsRoot>
+
     <BuildArtifactsRoot     Condition=" '$(BuildArtifactsRoot)'     == '' ">$(ArtifactsRoot)build$(slash)</BuildArtifactsRoot>
     <BuildArtifactsRoot     Condition=" !HasTrailingSlash('$(BuildArtifactsRoot)') ">$(BuildArtifactsRoot)$(slash)</BuildArtifactsRoot>
 
@@ -146,7 +149,8 @@
       <TestProjects       Include="@(DotNetProjects)"       Condition=" '%(DotNetProjects.ProjectGroup)' == 'test' "/>
       <SampleProjects     Include="@(DotNetProjects)"       Condition=" '%(DotNetProjects.ProjectGroup)' == 'samples' "/>
       <PublishProjects    Include="@(SourceProjects)"       Condition=" '@(SourceProjects->Count())' != '0' AND %(SourceProjects.IsPublishable) "/>
-      <PackProjects       Include="@(SourceProjects)"      Condition="  '@(SourceProjects->Count())' != '0' AND %(SourceProjects.IsPackable) " />
+      <PackProjects       Include="@(SourceProjects)"       Condition=" '@(SourceProjects->Count())' != '0' AND %(SourceProjects.IsPackable) " />
+      <OpenApiProjects    Include="@(SourceProjects)"       Condition=" '@(SourceProjects->Count())' != '0' AND %(SourceProjects.IsOpenApi) " />
 
       <DocFXProjects      Include="$(DocsRoot)**$(slash)docfx.json" />
     </ItemGroup>

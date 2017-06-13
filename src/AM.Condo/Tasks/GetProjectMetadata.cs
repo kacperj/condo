@@ -75,8 +75,7 @@ namespace AM.Condo.Tasks
             // determine if the project is a library
             var library = output.Equals("library", StringComparison.OrdinalIgnoreCase);
 
-            // set the default publish and pack
-            project.SetMetadata("IsPublishable", (!library).ToString());
+            // set the default pack
             project.SetMetadata("IsPackable", library.ToString());
 
             // get the target framework node
@@ -90,6 +89,7 @@ namespace AM.Condo.Tasks
                 // set publish and pack to false
                 project.SetMetadata("IsPublishable", "false");
                 project.SetMetadata("IsPackable", "false");
+                project.SetMetadata("IsOpenApi", "false");
 
                 // move on immediately
                 return;
@@ -99,8 +99,8 @@ namespace AM.Condo.Tasks
             var tfm = frameworks
                 .FirstOrDefault(name => name.StartsWith("netcoreapp", StringComparison.OrdinalIgnoreCase));
 
-            // set the publish to true
-            project.SetMetadata("IsPublishable", (tfm != null).ToString());
+            // set the publish to true if the tfm is netcoreapp and the output type is library
+            project.SetMetadata("IsPublishable", (tfm != null && library).ToString());
 
             // get the publish property
             var publish = xml.Descendants("IsPublishable").FirstOrDefault()?.Value;
@@ -121,6 +121,12 @@ namespace AM.Condo.Tasks
                 // set the is-packable metadata
                 project.SetMetadata("IsPackable", pack);
             }
+
+            // get the open api property
+            var openApi = xml.Descendants("IsOpenApi").FirstOrDefault()?.Value;
+
+            // set the open api metadata
+            project.SetMetadata("IsOpenApi", string.IsNullOrEmpty(openApi) ? "false" : openApi);
 
             // set the target frameworks property
             project.SetMetadata("TargetFrameworks", string.Join(";", frameworks));
