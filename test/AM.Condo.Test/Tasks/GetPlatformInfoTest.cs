@@ -11,7 +11,7 @@ namespace AM.Condo.Tasks
     [Class(nameof(GetPlatformInfo))]
     public class GetPlatformInfoTest
     {
-        [Fact(Skip = "Trait filtering is currently broken...")]
+        [Fact]
         [Platform(PlatformType.MacOS)]
         [Priority(1)]
         [Purpose(PurposeType.Integration)]
@@ -39,7 +39,7 @@ namespace AM.Condo.Tasks
             Assert.Equal(expected.PlatformName, actual.Platform);
         }
 
-        [Fact(Skip = "Trait filtering is currently broken...")]
+        [Fact]
         [Platform(PlatformType.Windows)]
         [Priority(1)]
         [Purpose(PurposeType.Integration)]
@@ -67,7 +67,7 @@ namespace AM.Condo.Tasks
             Assert.Equal(expected.PlatformName, actual.Platform);
         }
 
-        [Fact(Skip = "Trait filtering is currently broken...")]
+        [Fact]
         [Platform(PlatformType.Linux)]
         [Priority(1)]
         [Purpose(PurposeType.Integration)]

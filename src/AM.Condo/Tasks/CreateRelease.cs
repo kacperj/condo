@@ -89,19 +89,19 @@ namespace AM.Condo.Tasks
                 var message = $"{this.ReleaseMessage} {this.Version} ***NO_CI***";
 
                 // create the commit and tag the release
-                repository.Commit(message).Tag(this.Version, this.Version);
+                repository.Commit(message);
 
                 // log a message
-                this.Log.LogMessage(MessageImportance.High, $"Created and tagged the release for version: {this.Version}...");
+                this.Log.LogMessage(MessageImportance.High, $"Created release: {this.Version}");
 
                 // determine if we should push
                 if (this.Push)
                 {
                     // push the changes to the remote
-                    repository.Push(tags: true);
+                    repository.Push(tags: false);
 
                     // log a message
-                    this.Log.LogMessage(MessageImportance.High, $"Pushed the release for version: {this.Version}...");
+                    this.Log.LogMessage(MessageImportance.High, $"Pushed release: {this.Version}");
                 }
             }
             catch (Exception netEx)

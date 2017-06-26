@@ -35,10 +35,9 @@ namespace AM.Condo.Tasks
         public string Tag { get; set; }
 
         /// <summary>
-        /// Gets or sets the remote that should be used to push the tag.
+        /// Gets or sets a value indicating whether or not to allow the tag to be automatically pushed to the origin.
         /// </summary>
-        [Output]
-        public string Remote { get; set; } = "origin";
+        public bool Push { get; set; } = false;
 
         /// <summary>
         /// Gets or sets the annotation for the tag. If no annotation is specified, the annotation will be set to the
@@ -77,16 +76,6 @@ namespace AM.Condo.Tasks
                 return false;
             }
 
-            // determine if the remote is set
-            if (string.IsNullOrEmpty(this.Remote))
-            {
-                // log the error
-                this.Log.LogError("The remote must be specified.");
-
-                // move on immediately
-                return false;
-            }
-
             // determine if the annotation is not set
             if (string.IsNullOrEmpty(this.Annotation))
             {
@@ -105,11 +94,21 @@ namespace AM.Condo.Tasks
                 // load the repository
                 var repository = factory.Load(root, new CondoMSBuildLogger(this.Log));
 
-                // set the repository tag
+                // set the repository tag and push it
                 repository.Tag(this.Tag, this.Annotation);
 
                 // log a message
-                this.Log.LogMessage(MessageImportance.High, $"Created tag {this.Tag}");
+                this.Log.LogMessage(MessageImportance.High, $"Created tag: {this.Tag}");
+
+                // determine if we should push
+                if (this.Push)
+                {
+                    // push the changes to the remote
+                    repository.Push(tags: true);
+
+                    // log a message
+                    this.Log.LogMessage(MessageImportance.High, $"Pushed tag: {this.Tag}");
+                }
             }
             catch (Exception netEx)
             {

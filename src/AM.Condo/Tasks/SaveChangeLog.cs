@@ -143,7 +143,7 @@ namespace AM.Condo.Tasks
             {
                 var options = new ChangeLogOptions
                 {
-                    RepositoryUri = this.RepositoryUri,
+                    RepositoryUri = this.RepositoryUri.Contains("github.com") ? this.RepositoryUri : null,
                     GroupBy = this.GroupByHeader,
                     SortBy = this.SortByHeader.PropertySplit(),
                     Version = SemanticVersion.Parse(this.Version)
@@ -184,7 +184,7 @@ namespace AM.Condo.Tasks
                 repository.Add(this.Name, force: true);
 
                 // write a message
-                this.Log.LogMessage(MessageImportance.High, $"Saved the conventional changelog: {this.Name}...");
+                this.Log.LogMessage(MessageImportance.High, $"Saved changelog: {this.Name}");
             }
             catch (Exception netEx)
             {

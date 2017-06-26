@@ -76,7 +76,7 @@ namespace AM.Condo.Tasks
                 }
 
                 // log a message
-                this.Log.LogMessage(MessageImportance.High, $"Checked out the branch: {this.Branch}...");
+                this.Log.LogMessage(MessageImportance.High, $"Checked out branch: {this.Branch}");
             }
             catch (Exception netEx)
             {

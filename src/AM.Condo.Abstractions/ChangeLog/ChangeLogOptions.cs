@@ -19,7 +19,8 @@ namespace AM.Condo.ChangeLog
         /// <summary>
         /// Gets a value indicating whether or not to link references.
         /// </summary>
-        public bool LinkReferences => !string.IsNullOrEmpty(this.Repository) || !string.IsNullOrEmpty(this.RepositoryUri);
+        public bool LinkReferences
+            => !(string.IsNullOrEmpty(this.Repository) && string.IsNullOrEmpty(this.RepositoryUri));
 
         /// <summary>
         /// Gets or sets the name of the repository.

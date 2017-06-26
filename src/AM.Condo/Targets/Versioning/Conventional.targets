@@ -58,6 +58,11 @@
       <Output TaskParameter="RecommendedRelease" PropertyName="RecommendedRelease" />
       <Output TaskParameter="CurrentVersion" PropertyName="CurrentVersion" />
     </RecommendVersion>
+
+    <PropertyGroup>
+      <CurrentReleaseTag>$(VersionTagPrefix)$(RecommendedRelease)</CurrentReleaseTag>
+      <NextReleaseTag>$(VersionTagPrefix)$(NextRelease)</NextReleaseTag>
+    </PropertyGroup>
   </Target>
 
   <!-- checkout the release branch -->
@@ -68,8 +73,7 @@
       RemoteUri="$(RepositoryUri)" />
   </Target>
 
-  <!-- create a release commit -->
-  <Target Name="CreateRelease" Condition=" $(CreateRelease) AND !$(IsPullRequest) AND $(CI) ">
+  <Target Name="SaveChangeLog">
     <PropertyGroup>
       <AuthorName Condition=" '$(AuthorName)' == '' ">$(GIT_AUTHOR_NAME)</AuthorName>
       <AuthorName Condition=" '$(AuthorName)' == '' ">$(Company)</AuthorName>
@@ -78,14 +82,14 @@
 
       <AuthorEmail Condition=" '$(AuthorEmail)' == '' ">$(GIT_AUTHOR_EMAIL)</AuthorEmail>
       <AuthorEmail Condition=" '$(AuthorEmail)' == '' ">open@automotivemastermind.com</AuthorEmail>
-      <CurrentReleaseTag>$(VersionTagPrefix)$(NextRelease)</CurrentReleaseTag>
     </PropertyGroup>
 
     <!-- save the change log -->
     <SaveChangeLog
       Name="CHANGELOG.md"
-      Version="$(CurrentReleaseTag)"
+      Version="$(NextReleaseTag)"
       RepositoryRoot="$(RepositoryRoot)"
+      RepositoryUri="$(RepositoryUri)"
       GroupByHeader="$(GroupByHeader)"
       SortByHeader="$(SortByHeader)"
       ChangeLogInitialize="$(ChangeLogInitialize)"
@@ -94,6 +98,14 @@
       ChangeLogTypes="$(ChangeLogTypes)"
       ChangeLogNames="$(ChangeLogNames)" />
 
+  </Target>
+
+  <!-- create a release commit -->
+  <Target Name="CreateRelease" Condition=" $(CreateRelease) AND !$(IsPullRequest) AND $(CI) ">
+    <PropertyGroup>
+      <CurrentReleaseTag>$(NextReleaseTag)</CurrentReleaseTag>
+    </PropertyGroup>
+
     <!-- create the release -->
     <CreateRelease
       RepositoryRoot="$(RepositoryRoot)"
@@ -101,6 +113,13 @@
       ReleaseMessage="$(ReleaseMessage)"
       AuthorName="$(AuthorName)"
       AuthorEmail="$(AuthorEmail)"
+      Push="$(AllowPushCommits)" />
+  </Target>
+
+  <Target Name="CreateTag" Condition=" $(CreateTag) AND !$(IsPullRequest) AND $(CI) ">
+    <SetGitTag
+      RepositoryRoot="$(RepositoryRoot)"
+      Tag="$(CurrentReleaseTag)"
       Push="$(AllowPushCommits)" />
   </Target>
 
@@ -121,7 +140,9 @@
 
     <AfterPublish>
       $(AfterPublish);
+      SaveChangeLog;
       CreateRelease;
+      CreateTag;
     </AfterPublish>
   </PropertyGroup>
 </Project>

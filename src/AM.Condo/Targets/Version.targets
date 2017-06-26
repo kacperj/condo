@@ -17,6 +17,8 @@
 
   <PropertyGroup>
     <CreateRelease Condition=" '$(CreateRelease)' == '' ">$(CONDO_CREATE_RELEASE)</CreateRelease>
+    <CreateTag     Condition=" '$(CreateTag)' == '' ">$(CONDO_CREATE_TAG)</CreateTag>
+    <CreateDocs    Condition=" '$(CreateDocs)' == '' ">$(CONDO_CREATE_DOCS)</CreateDocs>
   </PropertyGroup>
 
   <!-- import the branch and version strategy -->
@@ -49,6 +51,8 @@
         ProductionReleaseBranchBuildQuality="$(ProductionReleaseBranchBuildQuality)">
       <Output TaskParameter="BuildQuality" PropertyName="BuildQuality" />
       <Output TaskParameter="CreateRelease" PropertyName="CreateRelease" Condition=" '$(CreateRelease)' == '' " />
+      <Output TaskParameter="CreateTag" PropertyName="CreateTag" Condition=" '$(CreateTag)' == '' " />
+      <Output TaskParameter="CreateDocs" PropertyName="CreateDocs" Condition=" '$(CreateDocs)' == '' " />
     </GetBuildQuality>
   </Target>
 
@@ -114,6 +118,7 @@
     <Message Importance="High" Text="Build Quality      : $(BuildQuality)" />
     <Message Importance="High" Text="Pre-Release Tag    : $(PreReleaseTag)" />
     <Message Importance="High" Text="Create Release     : $(CreateRelease)" />
+    <Message Importance="High" Text="Create Tag         : $(CreateTag)" />
 
     <Message Importance="High"
              Text="##vso[build.updatebuildnumber]$(InformationalVersion)"

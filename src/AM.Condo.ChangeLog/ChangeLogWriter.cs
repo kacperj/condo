@@ -230,13 +230,6 @@ namespace AM.Condo.ChangeLog
 
         private void ApplyVersion(SemanticVersion version, string previous, IList<GitCommit> log)
         {
-            // determine if the log does not contain any commits
-            if (log.Count == 0)
-            {
-                // move on immediately
-                return;
-            }
-
             var first = log[0];
 
             // setup the root dictionary

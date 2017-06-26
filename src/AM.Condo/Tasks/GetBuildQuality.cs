@@ -114,6 +114,24 @@ namespace AM.Condo.Tasks
         /// </summary>
         [Output]
         public bool CreateRelease { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether or not to create a tag.
+        /// </summary>
+        [Output]
+        public bool CreateTag { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether or not to create and publish docs.
+        /// </summary>
+        [Output]
+        public bool CreateDocs { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether or not to revert a merge commit on the HEAD of the current branch.
+        /// </summary>
+        [Output]
+        public bool RevertMergeCommit { get; set; }
         #endregion
 
         #region Methods
@@ -140,8 +158,8 @@ namespace AM.Condo.Tasks
                 // set the build quality to the master branch build quality
                 this.BuildQuality = this.ProductionReleaseBranchBuildQuality;
 
-                // set the create release flag
-                this.CreateRelease = true;
+                // set the tag, docs, and revert flags
+                this.RevertMergeCommit = this.CreateTag = this.CreateDocs = true;
 
                 // move on immediately
                 return true;
@@ -187,7 +205,7 @@ namespace AM.Condo.Tasks
                 // set the build quality to the release branch build quality
                 this.BuildQuality = this.ReleaseBranchBuildQuality;
 
-                // set the create release flag
+                // set the create release and create tag flags
                 this.CreateRelease = true;
 
                 // move on immediately
@@ -201,7 +219,7 @@ namespace AM.Condo.Tasks
                 // set the build quality to the support branch build quality
                 this.BuildQuality = this.SupportBranchBuildQuality;
 
-                // set the create release flag
+                // set the create release and create tag flags
                 this.CreateRelease = true;
 
                 // move on immediately
@@ -215,7 +233,7 @@ namespace AM.Condo.Tasks
                 // set the build quality to the hotfix branch build quality
                 this.BuildQuality = this.HotfixBranchBuildQuality;
 
-                // set the create release flag
+                // set the create release and create tag flags
                 this.CreateRelease = true;
 
                 // move on immediately
