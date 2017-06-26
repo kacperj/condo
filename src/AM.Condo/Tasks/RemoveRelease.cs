@@ -45,7 +45,7 @@ namespace AM.Condo.Tasks
 
         #region Methods
         /// <summary>
-        /// Executes the <see cref="CreateRelease"/> task.
+        /// Executes the <see cref="RemoveRelease"/> task.
         /// </summary>
         /// <returns>
         /// A value indicating whether or not the task executed successfully.
