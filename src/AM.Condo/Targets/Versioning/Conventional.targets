@@ -102,14 +102,10 @@
 
   <!-- create a release commit -->
   <Target Name="CreateRelease" Condition=" $(CreateRelease) AND !$(IsPullRequest) AND $(CI) ">
-    <PropertyGroup>
-      <CurrentReleaseTag>$(NextReleaseTag)</CurrentReleaseTag>
-    </PropertyGroup>
-
     <!-- create the release -->
     <CreateRelease
       RepositoryRoot="$(RepositoryRoot)"
-      Version="$(CurrentReleaseTag)"
+      Version="$(NextReleaseTag)"
       ReleaseMessage="$(ReleaseMessage)"
       AuthorName="$(AuthorName)"
       AuthorEmail="$(AuthorEmail)"
