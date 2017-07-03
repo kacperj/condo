@@ -15,7 +15,7 @@ namespace AM.Condo.IO
     {
         #region Methods
         /// <summary>
-        /// Parses the specified lines using the specified <paramref name="options"/>
+        /// Parses the specified <paramref name="commits"/> using the specified <paramref name="options"/> as a git log.
         /// </summary>
         /// <param name="commits">
         /// The raw commit lines emitted from a git log operation.
@@ -26,7 +26,7 @@ namespace AM.Condo.IO
         /// <returns>
         /// The parsed git log.
         /// </returns>
-        GitLog Parse(IEnumerable<IList<string>> commits, GitLogOptions options);
+        GitLog Parse(IEnumerable<ICollection<string>> commits, GitLogOptions options);
         #endregion
     }
 }

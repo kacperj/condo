@@ -26,7 +26,7 @@ namespace AM.Condo.IO
         private static readonly Regex TagRegex = new Regex("tag:\\s*(.+)");
 
         /// <inheritdoc />
-        public GitLog Parse(IEnumerable<IList<string>> commits, GitLogOptions options)
+        public GitLog Parse(IEnumerable<ICollection<string>> commits, GitLogOptions options)
         {
             // create the git log
             var log = new GitLog();

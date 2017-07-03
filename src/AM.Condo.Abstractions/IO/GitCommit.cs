@@ -91,6 +91,7 @@ namespace AM.Condo.IO
         public ICollection<string> Branches { get; } = new HashSet<string>();
         #endregion
 
+        #region Methods
         /// <inheritdoc />
         public override string ToString()
         {
@@ -106,5 +107,6 @@ namespace AM.Condo.IO
 
             return builder.ToString();
         }
+        #endregion
     }
 }
