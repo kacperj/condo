@@ -172,6 +172,9 @@ namespace AM.Condo.Tasks
                 // set the build quality to the develop branch build quality
                 this.BuildQuality = this.NextReleaseBranchBuildQuality;
 
+                // set the tag
+                this.CreateTag = true;
+
                 // move on immediately
                 return true;
             }
@@ -205,8 +208,8 @@ namespace AM.Condo.Tasks
                 // set the build quality to the release branch build quality
                 this.BuildQuality = this.ReleaseBranchBuildQuality;
 
-                // set the create release and create tag flags
-                this.CreateRelease = true;
+                // set the create release, create tag, and create docs flags
+                this.CreateTag = this.CreateRelease = this.CreateDocs = true;
 
                 // move on immediately
                 return true;
@@ -219,8 +222,8 @@ namespace AM.Condo.Tasks
                 // set the build quality to the support branch build quality
                 this.BuildQuality = this.SupportBranchBuildQuality;
 
-                // set the create release and create tag flags
-                this.CreateRelease = true;
+                // set the create release, create tag, and create docs flags
+                this.CreateTag = this.CreateRelease = this.CreateDocs = true;
 
                 // move on immediately
                 return true;
@@ -233,8 +236,8 @@ namespace AM.Condo.Tasks
                 // set the build quality to the hotfix branch build quality
                 this.BuildQuality = this.HotfixBranchBuildQuality;
 
-                // set the create release and create tag flags
-                this.CreateRelease = true;
+                // set the create release, create tag, and create docs flags
+                this.CreateTag = this.CreateRelease = this.CreateDocs = true;
 
                 // move on immediately
                 return true;
