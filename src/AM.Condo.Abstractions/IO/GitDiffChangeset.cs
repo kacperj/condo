@@ -18,17 +18,17 @@ namespace AM.Condo.IO
         /// <summary>
         /// Gets the collection of files that were created within the git-diff.
         /// </summary>
-        IEnumerable<GitDiffFile> Created => this.Files.Where(file => file.Created);
+        public IEnumerable<GitDiffFile> Created => this.Files.Where(file => file.Created);
 
         /// <summary>
         /// Gets the collection of files that were deleted within the git-diff.
         /// </summary>
-        IEnumerable<GitDiffFile> Deleted => this.Files.Where(file => file.Deleted);
+        public IEnumerable<GitDiffFile> Deleted => this.Files.Where(file => file.Deleted);
 
         /// <summary>
         /// Gets the collection of files associated with the git-diff.
         /// </summary>
-        ICollection<GitDiffFile> Files { get; } = new HashSet<GitDiffFile>();
+        public ICollection<GitDiffFile> Files { get; } = new HashSet<GitDiffFile>();
         #endregion
     }
 }
