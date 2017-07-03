@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-vscode.csharp",
+    "k--kato.docomment",
+    "PeterJausovec.vscode-docker",
+    "EditorConfig.editorconfig",
+    "pflannery.vscode-versionlens"
+  ]
+}
