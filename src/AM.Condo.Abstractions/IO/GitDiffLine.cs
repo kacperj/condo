@@ -13,22 +13,22 @@ namespace AM.Condo.IO
     {
         #region Properties and Indexers
         /// <summary>
-        /// Gets the source line number of the patch.
+        /// Gets or sets the source line number of the patch.
         /// </summary>
-        public int SourceLine { get; set; }
+        public int From { get; set; }
 
         /// <summary>
-        /// Gets the destination line number of the patch.
+        /// Gets or sets the destination line number of the patch.
         /// </summary>
-        public int DestinationLine { get; set; }
+        public int To { get; set; }
 
         /// <summary>
-        /// Gets the operation type of the patch.
+        /// Gets or sets the operation type of the patch.
         /// </summary>
         public GitDiffOperationType Operation { get; set; }
 
         /// <summary>
-        /// Gets the content of the line.
+        /// Gets or sets the content of the line.
         /// </summary>
         public string Content { get; set; }
         #endregion

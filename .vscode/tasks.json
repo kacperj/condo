@@ -9,13 +9,15 @@
   "linux": {
     "command": "./condo.sh",
     "args": [
-      "--no-color"
+      "--no-color",
+      "--"
     ]
   },
   "osx": {
     "command": "./condo.sh",
     "args": [
-      "--no-color"
+      "--no-color",
+      "--"
     ]
   },
   "isShellCommand": true,

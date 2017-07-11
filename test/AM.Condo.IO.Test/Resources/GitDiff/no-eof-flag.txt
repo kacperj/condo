@@ -1,0 +1,8 @@
+diff --git a/file1 b/file1
+index 123..456 789
+--- a/file1
++++ b/file1
+@@ -1,2 +1,2 @@
+- line1
++ line2
+\\ No newline at end of file

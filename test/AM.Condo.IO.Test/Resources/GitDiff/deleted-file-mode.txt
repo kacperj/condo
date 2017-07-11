@@ -1,0 +1,8 @@
+diff --git a/test b/test
+deleted file mode 100644
+index abcdef1..0000000
+--- b/test
++++ /dev/null
+@@ -1,2 +0,0 @@
+-line1
+-line2

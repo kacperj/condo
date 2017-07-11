@@ -26,6 +26,16 @@ namespace AM.Condo.IO
         public IEnumerable<GitDiffFile> Deleted => this.Files.Where(file => file.Deleted);
 
         /// <summary>
+        /// Gets the collection of files that were modified within the git-diff.
+        /// </summary>
+        public IEnumerable<GitDiffFile> Modified => this.Files.Where(file => file.Modified);
+
+        /// <summary>
+        /// Gets the collection of files that were renamed within the git-diff.
+        /// </summary>
+        public IEnumerable<GitDiffFile> Renamed => this.Files.Where(file => file.Renamed);
+
+        /// <summary>
         /// Gets the collection of files associated with the git-diff.
         /// </summary>
         public ICollection<GitDiffFile> Files { get; } = new HashSet<GitDiffFile>();

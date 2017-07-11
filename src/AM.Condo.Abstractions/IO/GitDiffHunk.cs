@@ -15,19 +15,24 @@ namespace AM.Condo.IO
     {
         #region Properties and Indexers
         /// <summary>
-        /// Gets or sets the source of the hunk.
+        /// Gets the source of the hunk.
         /// </summary>
-        public GitDiffHunkTarget Source { get; } = new GitDiffHunkTarget();
+        public GitDiffHunkTarget From { get; } = new GitDiffHunkTarget();
 
         /// <summary>
-        /// Gets or sets the destination of the hunk.
+        /// Gets the destination of the hunk.
         /// </summary>
-        public GitDiffHunkTarget Destination { get; } = new GitDiffHunkTarget();
+        public GitDiffHunkTarget To { get; } = new GitDiffHunkTarget();
+
+        /// <summary>
+        /// Gets or sets the content of the hunk.
+        /// </summary>
+        public string Content { get; set; }
 
         /// <summary>
         /// Gets the collection of lines associated with the git-diff hunk.
         /// </summary>
-        public IEnumerable<GitDiffLine> Lines { get; } = new HashSet<GitDiffLine>();
+        public ICollection<GitDiffLine> Lines { get; } = new HashSet<GitDiffLine>();
         #endregion
     }
 }

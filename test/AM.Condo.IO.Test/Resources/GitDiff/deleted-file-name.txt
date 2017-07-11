@@ -1,0 +1,3 @@
+diff --git a/deletedFile.txt b/deletedFile.txt
+deleted file mode 100644
+index e6a2e28..0000000
