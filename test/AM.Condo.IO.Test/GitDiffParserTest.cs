@@ -59,7 +59,56 @@ namespace AM.Condo.IO
 
             var lines = content.Split('\n');
 
+            var expected = new GitDiffChangeset
+            {
+                Files =
+                {
+                    new GitDiffFile
+                    {
+                        Source = "file",
+                        Destination = "file",
+                        Operation = GitDiffOperationType.Modified,
+                        Hunks =
+                        {
+                            new GitDiffHunk
+                            {
+                                Content = "@@ -1,2 +1,2 @@",
+                                Lines =
+                                {
+                                    new GitDiffLine
+                                    {
+                                        Operation = GitDiffOperationType.Deleted,
+                                        Content = "- line1"
+                                    },
+                                    new GitDiffLine
+                                    {
+                                        Operation = GitDiffOperationType.Created,
+                                        Content = "+ line2"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+
             var target = new GitDiffParser();
+
+            // act
+            var actual = target.Parse(lines);
+
+            // assert
+            AssertChangeset(expected, actual);
+        }
+
+        [Fact]
+        public void Parse_WithDeletedFileMode_ReturnsChangeset()
+        {
+            // arrange
+            var path = Path.Combine(ResourcePath, "deleted-file-mode.txt");
+            var content = File.ReadAllText(path);
+
+            var lines = content.Split('\n');
 
             var expected = new GitDiffChangeset
             {
@@ -94,28 +143,13 @@ namespace AM.Condo.IO
                 }
             };
 
-            // act
-            var actual = target.Parse(lines);
-
-            // assert
-            AssertChangeset(expected, actual);
-        }
-
-        [Fact]
-        public void Parse_WithDeletedFileMode_ReturnsChangeset()
-        {
-            // arrange
-            var path = Path.Combine(ResourcePath, "deleted-file-mode.txt");
-            var content = File.ReadAllText(path);
-
-            var lines = content.Split('\n');
-
             var target = new GitDiffParser();
 
             // act
             var actual = target.Parse(lines);
 
             // assert
+            AssertChangeset(expected, actual);
         }
 
         private static void AssertChangeset(GitDiffChangeset expected, GitDiffChangeset actual)
