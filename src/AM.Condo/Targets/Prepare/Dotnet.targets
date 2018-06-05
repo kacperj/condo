@@ -53,7 +53,7 @@
     </GetProjectMetadata>
 
     <ItemGroup Condition=" $(DotNetRequired) ">
-      <UnfilteredRestoreProjects    Include="@(DotNetMetadata)"       Condition=" %(DotNetMetadata.IsRestorable) " />
+      <RestoreProjects    Include="@(DotNetMetadata)"       Condition=" %(DotNetMetadata.IsRestorable) " />
       <BuildProjects      Include="@(DotNetMetadata)"       Condition=" %(DotNetMetadata.IsBuildable) " />
       <SourceProjects     Include="@(DotNetMetadata)"       Condition=" '%(DotNetMetadata.ProjectGroup)' == 'src' " />
       <TestProjects       Include="@(DotNetMetadata)"       Condition=" %(DotNetMetadata.IsTestable) " />
@@ -62,8 +62,8 @@
       <PackProjects       Include="@(SourceProjects)"       Condition=" %(SourceProjects.IsPackable) " />
     </ItemGroup>
 
-    <RemoveDuplicates Inputs="@(UnfilteredRestoreProjects)">
-      <Output TaskParameter="Filtered" ItemName="RestoreProjects" />
+    <RemoveDuplicates Inputs="@(RestoreProjects)">
+      <Output TaskParameter="Filtered" ItemName="FilteredRestoreProjects" />
     </RemoveDuplicates>
 
     <PropertyGroup>
@@ -89,7 +89,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <_DotNetRestore Include="@(RestoreProjects)">
+      <_DotNetRestore Include="@(FilteredRestoreProjects)">
         <AdditionalProperties>%(RestoreProjects.AdditionalProperties);RuntimeIdentifiers=%(RuntimeIdentifiers)</AdditionalProperties>
       </_DotNetRestore>
     </ItemGroup>
