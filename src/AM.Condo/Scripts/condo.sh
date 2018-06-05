@@ -183,7 +183,7 @@ install_condo() {
         info "condo: publishing condo..."
 
         pushd $CONDO_PATH 1>/dev/null 2>&1
-        safe-exec dotnet publish $CONDO_PATH --framework netcoreapp2.1 --runtime $RUNTIME --output $CONDO_PUBLISH --verbosity minimal /p:GenerateAssemblyInfo=false /p:SourceLinkCreate=false /p:SourceLinkTest=false
+        safe-exec dotnet publish $CONDO_PATH --runtime $RUNTIME --output $CONDO_PUBLISH --verbosity minimal /p:GenerateAssemblyInfo=false /p:SourceLinkCreate=false /p:SourceLinkTest=false
         popd 1>/dev/null 2>&1
 
         cp -R $TEMPLATE_ROOT $CONDO_ROOT

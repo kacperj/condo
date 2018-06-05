@@ -3,21 +3,15 @@
   <PropertyGroup>
     <DotNetPublishProperties Condition=" '$(DotNetPublishProperties)' == '' ">$(DOTNET_PUBLISH_PROPS)</DotNetPublishProperties>
     <DotNetPublishProperties Condition=" '$(InformationalVersion)' != '' ">$(DotNetPublishProperties);Version=$(InformationalVersion)</DotNetPublishProperties>
+    <DotNetPublishProperties>$(DotNetPublishProperties);TargetLatestRuntimePatch=true</DotNetPublishProperties>
   </PropertyGroup>
 
   <Target Name="DotNetPublish" Condition=" $(DotNetPublish) ">
     <ItemGroup>
-      <_DotNetPublishRestore Include="@(PublishProjects)">
+      <_DotNetPublish Include="@(PublishProjects)">
         <AdditionalProperties>%(PublishProjects.AdditionalProperties);$(DotNetPublishProperties)</AdditionalProperties>
-        <AdditionalProperties Condition=" '%(RuntimeIdentifier)' != '' ">%(_DotNetPublishRestore.AdditionalProperties);RuntimeIdentifier=%(RuntimeIdentifier)</AdditionalProperties>
-      </_DotNetPublishRestore>
-    </ItemGroup>
-
-    <MSBuild Projects="@(_DotNetPublishRestore)" Targets="Restore" />
-
-    <ItemGroup>
-      <_DotNetPublish Include="@(_DotNetPublishRestore)">
-        <AdditionalProperties Condition=" '%(TargetFramework)' != '' ">%(AdditionalProperties);TargetFramework=%(TargetFramework)</AdditionalProperties>
+        <AdditionalProperties Condition=" '%(RuntimeIdentifier)' != '' ">%(_DotNetPublish.AdditionalProperties);RuntimeIdentifier=%(RuntimeIdentifier)</AdditionalProperties>
+        <AdditionalProperties Condition=" '%(TargetFramework)' != '' ">%(_DotNetPublish.AdditionalProperties);TargetFramework=%(TargetFramework)</AdditionalProperties>
         <AdditionalProperties>%(_DotNetPublish.AdditionalProperties);PublishDir=%(OutputPath)</AdditionalProperties>
         <AdditionalProperties>%(_DotNetPublish.AdditionalProperties);SelfContained=%(SelfContained)</AdditionalProperties>
       </_DotNetPublish>
