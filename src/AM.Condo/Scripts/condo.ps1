@@ -199,7 +199,11 @@ function Install-Condo() {
 
     # publish condo
     Write-Info "condo: publishing condo..."
-    Invoke-Cmd dotnet publish $CondoPath --runtime $runtime --output $CondoPublish --verbosity minimal /p:GenerateAssemblyInfo=false /p:SourceLinkCreate=false /p:SourceLinkTest=false
+
+    Push-Location $CondoPath | Out-Null
+    Invoke-Cmd dotnet publish --framework netcoreapp2.1 $CondoPath --runtime $runtime --output $CondoPublish --verbosity minimal /p:GenerateAssemblyInfo=false /p:SourceLinkCreate=false /p:SourceLinkTest=false
+    Pop-Location | Out-Null
+
     Write-Success "condo: publish complete"
 }
 

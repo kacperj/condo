@@ -1,7 +1,7 @@
 # CHANGE LOG
 
 > All notable changes to this project will be documented in this file.
-# [2.0.0](https://github.com/automotiveMastermind/condo.git/compare/1.0.0...2.0.0) (2018-06-04)
+# [2.0.0](https://github.com/automotiveMastermind/condo.git/compare/1.0.0...2.0.0) (2018-06-05)
 
 
 ### Bug Fixes
@@ -54,6 +54,7 @@
 * msbuildversion should be buildversion in csproj (#181) ([d5cecb3](https://github.com/automotiveMastermind/condo.git/commits/d5cecb3)), closes [#181](https://github.com/automotiveMastermind/condo.git/issues/181)
 * release vs publish semantics (#191) ([872cc9c](https://github.com/automotiveMastermind/condo.git/commits/872cc9c)), closes [#191](https://github.com/automotiveMastermind/condo.git/issues/191)
 * continue to include 2.1.105 sdk for now (#200) ([47c643d](https://github.com/automotiveMastermind/condo.git/commits/47c643d)), closes [#200](https://github.com/automotiveMastermind/condo.git/issues/200)
+* resolve netcore 2.1 compatibility issues ([550215f](https://github.com/automotiveMastermind/condo.git/commits/550215f))
 
 
 ### Features
